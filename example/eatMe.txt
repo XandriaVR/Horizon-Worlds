@@ -1,0 +1,99 @@
+// Based on https://support.oculus.com/articles/horizon/create-in-horizon-worlds/index-create-in-horizon
+
+/**************************
+* CREATE VARIABLES
+***************************/
+var originPos as vector [0] [0] [0]
+var originRot as rotation [0] [0] [0]
+var eat as boolean {false}
+
+/************************************
+* When world is started 
+*************************************/
+When world is started {
+  // Set to and position of object
+  set [originPos] to [position of [self]]
+  
+  // Set to and rotation of object
+  set [originRot] to [rotation of [self]]
+  
+  // Set visibility 
+  action [visibility with boolean {true}] on [self]
+  
+  // Set collidability
+  action [collidability with boolean {true}] on [self]
+}
+
+/************************************
+* When object is grabbed by player
+*************************************/
+When event [grabstart] with [player] is received {
+  // Set to
+  set [eat] to boolean {true}
+  
+  // Send event with delay
+  send event [eatLoop] to [self] after [0.5] seconds with []
+  
+  // Cancel sending event with delay
+  cancel sending event [eatReturn] to [self]
+}
+
+/************************************
+* When object is released by player
+*************************************/
+When event [grabend] with [player] is received {
+  // Cancel sending event with delay
+  cancel sending event [eatLoop] to [self]
+  
+  // Send event with delay
+  send event [eatReturn] to [self] after [3] seconds with []
+  
+  // Set to
+  set [eat] to boolean {false}
+}
+
+/************************************
+When event is received
+*************************************/
+When event [eatLoop] with [] is received {
+  // distance to -> distance from [a] to [b]
+  if distance from [position of [self]] to head position of [owner_of [self]] < 0.3 {
+    // Force release
+    force release on [self]
+    
+    // Play sound
+    play sound on [sfx]
+    
+    // Set visibility 
+    action [visibility with boolean {false}] on [self]
+
+    // Set collidability
+    action [collidability with boolean {false}] on [self]
+    
+    // Send event with delay
+    send event [eatReturn] to [self] after [3] seconds with []
+  }
+  
+  if eat == true {
+    // Send event with delay
+    send event [eatLoop] to [self] after [0.5] seconds with []
+  }
+}
+
+
+/************************************
+When event is received
+*************************************/
+When event [eatReturn] with [] is received {
+  // Move to
+  action [moveto with [originPos]] on [self]
+  
+  // Rotate to
+  action [rotateto with [originRot]] on [self]
+
+  // Set visibility 
+  action [visibility with boolean {true}] on [self]
+  
+  // Set collidability
+  action [collidability with boolean {true}] on [self]
+}
