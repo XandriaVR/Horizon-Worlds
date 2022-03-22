@@ -1,0 +1,44 @@
+/**************************
+* SET VARIABLES
+***************************/
+originPos as vector
+originRot as rotation
+eat as boolean
+
+/**************************
+* EVENTS
+***************************/
+when_world_is_started {
+  set originPos to position_of(self)
+  set originRot to position_of(self)
+  set self visibility to true
+  set self collidability to true
+}
+
+when_object_is_grabbed_by_player {
+  set eat to true
+  send eatLoop event to self after 0.5 seconds
+  cancel_sending_event(eatReturn) to self
+}
+
+when_object_is_released_by_player {
+  cancel_sending_event(eatLoop) to self
+  send(eat_Return) to self after 3 seconds
+  set eat to false
+}
+
+when eatLoop event is received{
+  if (distance_from(position_of(self)) to head_position_of(owner_of(self)) < 0.3) {
+    force_release_on(self)
+    play_sound_on(sfx)
+    set self visibility to false
+    set self collidability to false
+    send(eatReturn) to self after 3 seconds
+  }
+  if eat = true{
+    send(eatLoop) to self after 0.5 seconds
+  }
+}
+
+when eatReturn event is recieved {
+}
