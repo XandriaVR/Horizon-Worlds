@@ -56,6 +56,15 @@ Source: https://support.oculus.com/487096395667734
 | Launch from object | action [LaunchFrom with [self] [number {10}]] on [self] | object: The object whose position and direction will be used to launch from number: The speed to launch it at object: The object that will be launched | Makes the object become owned by the same owner of the "launch from" object (i.e. object specified by the first parameter), sets the position and rotation of the object to match that of the "launch from" object, and then sets the object's velocity to match its forward direction with a magnitude (speed) equal to the value of the second parameter. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | Actions Tab  |   |   |   |   |
 | Object  |   |   |   |   |
+| Show object | show [self] | object: The object that will turn visible | Makes object visible in your world. | Note: This will currently also affect collisions on an object. The object will be made collidable. |
+| Hide object | hide [self] | object: The object that will turn hidden | Hides the object in your world. | Note: This will currently also affect collisions on an object. The object will have collisions turned off. |
+| Paint object | action color with [color 1/ 0/ 0] on [self] | color: The rgb color to paint the object with object: The object that will be painted | Sets the color of the object. |
+| Enable object | enable [self] | object: The trigger that will be enabled | Enables a trigger's ability to detect people or objects. This can only be used on triggers. | |
+| Disable object | disable [self] | object: The trigger that will be disabled | Disables a trigger's ability to detect people or objects. This can only be used on triggers. | |
+| Set simulated | action [setsimulated with boolean {true/false}] on [self] | boolean: The true or false value that the simulated property will be set to object: The object that will have its simulation set | Enables or disables the "simulated" property. If off, the object cannot move. | |
+| Set gravity | action [setgravity with boolean {true/false}] on [self] | boolean: The true or false value that the gravity property will be set to object: The object that will have its simulation set | Enables or disables gravity simulation on this object.If on, the object will fall to the floor. If off, it wil act like it's floating in space. | |
+| Text  |   |   |   |   |
+| Display text | action [display with [number {1}] on [self] | string/number: The value the text gizmo will display object: The text gizmo that displays the string/number | Sets the displayed text in the text gizmo. |
 | 
 
 
