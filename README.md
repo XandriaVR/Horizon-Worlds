@@ -210,7 +210,6 @@
 | :white_medium_small_square: | **Text** |
 | :small_blue_diamond: | Length of string | length of [string] | | Returns the length of a string. |
 | :small_orange_diamond: | Substring of string |
-| :small_blue_diamond: | ~~Variable as string~~ | ~~[string] as string~~ | | ~~Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together.~~ |
 | :white_medium_small_square: | **List** |
 | :small_orange_diamond: | Length of list |
 | :small_orange_diamond: | Add to list |
@@ -222,18 +221,26 @@
 | :white_medium_small_square: | **Raycast** |
 | :small_orange_diamond: | Get raycast data |
 
-### Values
+### Values Tab
 
 | Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
+| :white_medium_small_square: | **Values** |
 | :small_blue_diamond: | set to | set [variable] to [value] |
+| :small_orange_diamond: | Set player persistent variable to |
+| :small_orange_diamond: | Get player persistent var |
 | :white_medium_small_square: | **Debugging** |
 | :small_blue_diamond: | debug print | debug print [value] |
+| :white_medium_small_square: | **Type Casting** |
+| :small_blue_diamond: | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |
 | :white_medium_small_square: | **Value Input** |
-| :small_blue_diamond: | self | (self) | | Represents the object that the script is attached to. | 
+| :small_blue_diamond: | self | (self) | | Represents the object that the script is attached to. |
+| :small_orange_diamond: | server player |
 | :small_blue_diamond: | number input | (number [0]) | | A number value. |
 | :small_blue_diamond: | boolean input | [boolean [false]] | | A boolean value. |
 | :small_blue_diamond: | vector input | (vector [0] [0] [0]) | | A vector3 value. |
 | :small_blue_diamond: | rotation input | (rotation [0] [0] [0]) | | A rotation value. |
 | :small_blue_diamond: | color input | (color [1] [1] [1]) | | A color value. |
 | :small_blue_diamond: | string input | (string [.]) | | A string value. |
+| :white_medium_small_square: | **Constants** |
+| :small_orange_diamond: | Pi |
