@@ -35,6 +35,55 @@ Source: https://support.oculus.com/487096395667734
 | Rotate to | action [rotateto with [rotation 90 / 0 / 0]] on [self] | rotation: The angle the object will rotate to object: The object that the motion applies to | Instantly rotates the object to the rotation provided. | |
 | Rotate by | action [rotate with [rotation 90/ 0 / 0]] on [self] | rotation: The angle the object will rotate by object: The object that the motion applies to | Instantly rotates the object by adding the supplied rotation to the current rotation. | |
 | Scale to | action [scale with [vector 1 / 0 / 0]] on self]] | vector: The size the object will scale to object: The object that the motion applies to | Instantly sets the scale to the value provided. | |
+| Motion Over Time  |   |   |   |   |
+| Move to over time | action [moveto with [vector 1 / 0 / 0] over [number {1} sec]] on [self] | vector: The positon in world space that the object moves to number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate over the given time. | |
+| Move by over time | action [move with [vector 1 / 0 / 0] over [number {1} sec]] on [self] | vector: The direction and distance the object will move by number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate that is the sum of the current position and the given coordinate, over the given time. | |
+| Rotate to over time | action [rotateto with [rotation 90 / 0 / 0] over [number {1} sec]] on [self] | rotation: The angle the object will rotate to number: the number of seconds it takes to rotate object: The object that the motion applies to | Rotates the object from its current rotation to the given rotation over the given time. |
+| Rotate by over time | action [rotate with [rotation 90 / 0 / 0] over [number {1} sec]] on [self] | rotation: The angle the object will rotate by number: the number of seconds it takes to rotate object: The object that the motion applies to | Rotates the object from its current rotation by the given rotation over the given time. | |
+| Scale to over time | action [scale with [vector 1/ 1/ 1] over [number {1} sec]] on [self] | vector: The size the object will scale to number: the number of seconds it takes to scale object: The object that the motion applies to | Scales the object from its current scale to the given scale over the given time. |
+| Player Motion  |   |   |   |   |
+| Respawn player | action [respawn with [param]] on [self] | playerid: The player that will be respawned object: The spawn point to respawn them to | Teleports a player to a spawn point. | |
+| Physical Motion  |   |   |   |   |
+| Disable object physical motion | disable [self] physical motion | object: The object that physical motion is being disabled on | Locks a physics object in place. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Enable object physical motion | enable [self] physical motion | object: The object that physical motion is being enabled on | Unlocks a physics object, allowing it to be moved. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Push | action [+Velocity with [vector 1/ 1/ 1]] on [self] | vector: The velocity being added object: The object that physical motion is being applied to | The object's velocity becomes equal to its current velocity, plus the given velocity. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Push with mass | action [+impulse with [vector 1/ 0/ 0]] on [self] | vector: The velocity being added object: The object that physical motion is being applied to | The object's velocity becomes equal to its current velocity, plus the given velocity divided by the object's mass (heavier objects have their velocity adjusted less). | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Push in local space | action [+VelLocal with [vector 1/ 0/ 0]] on [self] | vector: The velocity being added object: The object that physical motion is being applied to | The given velocity is rotated to the object's rotation, then a Push runs (x becomes left/right, y becomes above/below, z becomes forward/backward). | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Push in local space with mass | action [+ImpLocal with [vector 1/ 0 / 0]] on [self] | vector: The velocity being added object: The object that physical motion is being applied to | The given velocity is rotated to the object's rotation, then a Push with Mass runs (x becomes left/right, y becomes above/below, z becomes forward/backward). | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Spin | action [+AngVel with [vector 1/ 0/ 0]] on [self] | vector: The angular velocity being added object: The object that physical motion is being applied to | The object's angular velocity becomes equal to its current angular velocity, plus the given angular velocity. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Spin in local space | action [+AngVelLocal with [vector 1/ 0/ 0]] on [self] | vector: The angular velocity being added object: The object that physical motion is being applied to | The given velocity is rotated to the object's current rotation, then a Spin runs (x becomes pitch, y becomes yaw, z becomes roll). | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Stop physical motion | stop physical motion [self] | object: The object that the physical motion is being stopped on | The object's velocity and angular velocity both become zero. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Launch from object | action [LaunchFrom with [self] [number {10}]] on [self] | object: The object whose position and direction will be used to launch from number: The speed to launch it at object: The object that will be launched | Makes the object become owned by the same owner of the "launch from" object (i.e. object specified by the first parameter), sets the position and rotation of the object to match that of the "launch from" object, and then sets the object's velocity to match its forward direction with a magnitude (speed) equal to the value of the second parameter. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| Actions Tab  |   |   |   |   |
+| Object  |   |   |   |   |
+| 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
