@@ -100,10 +100,10 @@ Source: https://support.oculus.com/487096395667734
 | / | [a] / [b] | | Returns the result of the first number divided by the second number. | |
 | % | [a] % [b] | | Returns the "remainder" of the first number divided by the second number. Useful for making counters that count up to a certain number and then go back to 0. | |
 | **Basic Math**  |   |   |   |   |
-| abs | abs [n] | | Returns the positive value of a number. So, abs -10 = 10 and abs 3 = 3. |
-| ceil | ceil [n] | | Rounds a decimal number up to the next largest whole number. | 
-
-
+| abs | abs [n] | | Returns the positive value of a number. So, abs -10 = 10 and abs 3 = 3. | |
+| ceil | ceil [n] | | Rounds a decimal number up to the next largest whole number. | |
+| clamp | clamp [value] [min] [max] | | If the value is less than the smallest number, return the smallest number. If the value is larger than the biggest number, return the biggest number. Otherwise return the value. | | 
+|
 
 
 
