@@ -1,6 +1,6 @@
 # Horizon-Worlds
 ## How do I use code blocks in Horizon Worlds?
-Source: https://support.oculus.com/487096395667734 (Note: This represents codebocks available during beta.)
+Source: https://support.oculus.com/487096395667734 (Note: This represents codebocks available at one point during beta.)
 
 | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
@@ -34,7 +34,7 @@ Source: https://support.oculus.com/487096395667734 (Note: This represents codebo
 | **Motion Tab**  |   |   |   |   |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Instant Motion**  |   |   |   |   |
-| Move to action [moveto with [vector 1 / 0 / 0]] on [self] | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
+| Move to action | [moveto with [vector 1 / 0 / 0]] on [self] | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
 | Move by | action [move with [vector1 / 0 / 0]] on [self] | vector: The direction and distance the object will move by object: The object that the motion applies to | Instantly moves the object relative to its current position by adding the vector to the current position. | |
 | Rotate to | action [rotateto with [rotation 90 / 0 / 0]] on [self] | rotation: The angle the object will rotate to object: The object that the motion applies to | Instantly rotates the object to the rotation provided. | |
 | Rotate by | action [rotate with [rotation 90/ 0 / 0]] on [self] | rotation: The angle the object will rotate by object: The object that the motion applies to | Instantly rotates the object by adding the supplied rotation to the current rotation. | |
