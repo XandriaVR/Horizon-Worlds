@@ -103,7 +103,24 @@ Source: https://support.oculus.com/487096395667734
 | abs | abs [n] | | Returns the positive value of a number. So, abs -10 = 10 and abs 3 = 3. | |
 | ceil | ceil [n] | | Rounds a decimal number up to the next largest whole number. | |
 | clamp | clamp [value] [min] [max] | | If the value is less than the smallest number, return the smallest number. If the value is larger than the biggest number, return the biggest number. Otherwise return the value. | | 
-|
+| floor | floor [n] | | Rounds a decimal number down to the next smallest whole number. | |
+| frac | frac [n] |   |   |   |
+| lerp | lerp [from] [to] [alpha] | | Given a minimum number, maximum number, and an interpolated value between those numbers, lerp will return a value that represents the point of the interpolated value. | |
+| max | max [a] [b] | | Returns the biggest number | |
+| min | min [a] [b] | | Returns the smalles number | |
+| sqrt | sqrt [n] | | Returns the square root of a number | |
+| **Advanced Math**  |   |   |   |   |
+| pow | pow [number] [power] |   |   |   |
+| cos | cos [radians] | | Returns the cosine value of a number, from -1.0 to 1.0. | |
+| sin | sin [radians] | | Returns the sine value of a number, from -1.0 to 1.0. | |
+| tan | tan [radians] |   |   |   |
+| acos | acos [radians] |   |   |   |
+| asin | asin [radians] |   |   |   |
+| atan2 | atan2 [y] [x] |   |   |   |
+| exp | exp [power] |   |   |   |
+| log10 | log10 [number] |   |   |   |
+| random number with decimals | random between [min] and [max] | | Returns a value that can contain fractional decimals, between the first number and the second number. | Note: This is inclusive of the [min] value and inclusive of the [max] value. |
+
 
 
 
