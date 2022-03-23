@@ -116,7 +116,7 @@
 
 | Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | :white_medium_small_square: | **Logic**  |
+| :white_medium_small_square: | **Logic**  |
 | :small_blue_diamond: | "==" | [a] == [b] | | "true" if both values are the same. |
 | :small_blue_diamond: | != | [a] != [b] | | "true" if both values are not same. |
 | :small_blue_diamond: | < | [a] < [b] | | "true" if the first value is less than the second value |
@@ -182,7 +182,7 @@
 | :small_blue_diamond: | Position of player | [head] position of [player] | | Can specify head, torso, left hand, right hand, and foot position of a player. |
 | :small_blue_diamond: | Forward of player | [head] forward of [player] | | Can specify head, torso, left hand, right hand, and foot forward of a player. |
 | :small_blue_diamond: | Name of player | name of [player] | | Returns the username of a player. |
-| :small_blue_diamond: | :white_medium_small_square: | **Text** |
+| :white_medium_small_square: | **Text** |
 | :small_blue_diamond: | Length of string | length of [string] | | Returns the length of a string. |
 | :small_blue_diamond: | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |
 
@@ -191,9 +191,9 @@
 | Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | set to | set [variable] to [value] |
-| :small_blue_diamond: | :white_medium_small_square: | **Debugging** |
+| :white_medium_small_square: | **Debugging** |
 | :small_blue_diamond: | debug print | debug print [value] |
-| :small_blue_diamond: | :white_medium_small_square: | **Value Input** |
+| :white_medium_small_square: | **Value Input** |
 | :small_blue_diamond: | self | (self) | | Represents the object that the script is attached to. | 
 | :small_blue_diamond: | number input | (number [0]) | | A number value. |
 | :small_blue_diamond: | boolean input | [boolean [false]] | | A boolean value. |
