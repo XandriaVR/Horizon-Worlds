@@ -6,9 +6,9 @@ Source: https://support.oculus.com/487096395667734 (Note: This represents codebo
 
 | New | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-| | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. | |
-| | When event is received | When event[myevent] with [obj] is received | | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | |
-| | When trigger is entered by object | When event [triggerenter] with [obj] is received | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. |
+| :green_circle: | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. | |
+| :green_circle: | When event is received | When event[myevent] with [obj] is received | | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | |
+| :green_circle: | When trigger is entered by object | When event [triggerenter] with [obj] is received | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. |
 | | When trigger is exited by object | When event [triggerexit] with [obj] is received | Object: The object that exited trigger | Event runs when an object exits the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. |
 | | When trigger is entered by player | When event [triggerenter] with [player] is received | Player: The player that entered the trigger | Event runs when a player enters the trigger gizmo. | Note: The trigger must be configured to detect players. |
 | | When trigger is exited by player | When event [triggerexit] with [player] is received | Player: The player that exited the trigger | Event runs when a player exits the trigger gizmo. | Note: The trigger must be configured to detect players. |
