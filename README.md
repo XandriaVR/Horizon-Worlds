@@ -2,10 +2,9 @@
 ## How do I use code blocks in Horizon Worlds?
 Source: https://support.oculus.com/487096395667734 (Note: This represents codebocks available at one point during beta.)
 
+### Events Tab
+
 | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Events**  |   |   |   |   |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. | |
 | When event is received | When event[myevent] with [obj] is received | | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | |
@@ -30,8 +29,10 @@ Source: https://support.oculus.com/487096395667734 (Note: This represents codebo
 | Cancel sending event with delay | Cancel sending event [myevent] to [self] | Object: The object to stop sending a custom event to | Cancels a custom event from being sent. |
 | **Connections**  |   |   |   |   |
 | Connect to event | connect [self] [triggerenter] to local event [enter] | object: The object the where the non-local script event fires event: The event in the non-local script event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Motion Tab**  |   |   |   |   |
+
+### Motion Tab
+
+| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Instant Motion**  |   |   |   |   |
 | Move to | action [moveto with [vector 1 / 0 / 0]] on [self] | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
