@@ -18,4 +18,37 @@ Source: https://support.oculus.com/487096395667734
 | When object is attached to player | When event [attachstart] with [player] is received | Player: The player that attached the object that this script it attached to | Event runs when this object is attached to a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 | When object is unattached from player | When event [attachend] with [player] is received | Player: The player that unattached the object that this script it attached to | Event runs when this object is detached from a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 | When index trigger is pressed | When event [indextriggerdown] with [player] is received while self is grabbed | Player: The player that pressed their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is pressed. This event will only work on an object that is being grabbed by a player. | |
+| When index trigger is released | When event [indextriggerup] with [player] is received while self is grabbed | Player: The player that released their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is released. This event will only work on an object that is being grabbed by a player. | |
+| When button1 is pressed | When event [button1down] with [player] is received while self is grabbed | Player: The player that pressed button 1 while holding the object that this script it attached to | Event runs when button 1 on the oculus controller is pressed. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
+| When button1 is released | When event [button1up] with [player] is received while self is grabbed | Player: The player that released button 1 while holding the object that this script it attached to | Event runs when button 1 on the oculus controller is released. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
+| When button2 is pressed | When event [button2down] with [player] is received while self is grabbed | Player: The player that released button 2 while holding the object that this script it attached to | Event runs when button 2 on the oculus controller is pressed. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. | 
+| When button2 is released | When event [button2up] with [player] is received while self is grabbed | Player: The player that released button 2 while holding the object that this script it attached to | Event runs when button 2 on the oculus controller is released. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
+| Send event to object | Send event [myevent] to [self] with [param] | Object: The object that the event is sent to param: The parameters the event will receive | Sends a custom event to an object variable. The event will be received by the object that is being referenced by the object variable. | | 
+| Send event with delay | Send event [myevent] to [self] after [number] seconds | Object: The object the event is sent to number: The number of seconds to delay | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. |
+| Cancel sending event with delay | Cancel sending event [myevent] to [self] | Object: The object to stop sending a custom event to | Cancels a custom event from being sent. |
+| Connections  |   |   |   |   |
+| Connect to event | connect [self] [triggerenter] to local event [enter] | object: The object the where the non-local script event fires event: The event in the non-local script event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
+| Motion Tab  |   |   |   |   |
+| Instant Motion  |   |   |   |   |
+| Move to action [moveto with [vector 1 / 0 / 0]] on [self] | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
+| Move by | action [move with [vector1 / 0 / 0]] on [self] | vector: The direction and distance the object will move by object: The object that the motion applies to | Instantly moves the object relative to its current position by adding the vector to the current position. | |
+| Rotate to | action [rotateto with [rotation 90 / 0 / 0]] on [self] | rotation: The angle the object will rotate to object: The object that the motion applies to | Instantly rotates the object to the rotation provided. | |
+| Rotate by | action [rotate with [rotation 90/ 0 / 0]] on [self] | rotation: The angle the object will rotate by object: The object that the motion applies to | Instantly rotates the object by adding the supplied rotation to the current rotation. | |
+| Scale to | action [scale with [vector 1 / 0 / 0]] on self]] | vector: The size the object will scale to object: The object that the motion applies to | Instantly sets the scale to the value provided. | |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
