@@ -1,8 +1,9 @@
 # Horizon-Worlds
 ## Code block
-:small_blue_diamond: Source of this data is from: https://support.oculus.com/487096395667734 (Note: This code bocks data was created during beta.)
+:orange_circle: Source of this data is from Code Block Reference PDF (Note: newest data)
 
-:orange_circle: Source of this data is from Code Block Reference PDF (Note: this data is newer)
+:small_blue_diamond: Source of this data is from: https://support.oculus.com/487096395667734 (Note: older data)
+
 
 ### Events Tab
 
