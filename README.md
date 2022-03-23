@@ -4,6 +4,7 @@
 
 :small_blue_diamond: Source of this data is from: https://support.oculus.com/487096395667734 (Note: older data)
 
+:white_circle: subcategories under main category
 
 ### Events Tab
 
