@@ -101,6 +101,10 @@
 | :small_blue_diamond: | Disable object | disable [self] | object: The trigger that will be disabled | Disables a trigger's ability to detect people or objects. This can only be used on triggers. |
 | :small_blue_diamond: | Set simulated | action [setsimulated with boolean {true/false}] on [self] | boolean: The true or false value that the simulated property will be set to object: The object that will have its simulation set | Enables or disables the "simulated" property. If off, the object cannot move. |
 | :small_blue_diamond: | Set gravity | action [setgravity with boolean {true/false}] on [self] | boolean: The true or false value that the gravity property will be set to object: The object that will have its simulation set | Enables or disables gravity simulation on this object.If on, the object will fall to the floor. If off, it wil act like it's floating in space. |
+| :small_orange_diamond: | Force release |
+| :small_orange_diamond: | Launch projectile |
+| :small_orange_diamond: | Launch projectile at speed |
+| :small_orange_diamond: | Set projectile gravity |
 | :white_medium_small_square: | **Text** |
 | :small_blue_diamond: | Display text | action [display with [number {1}]] on [self] | string/number: The value the text gizmo will display object: The text gizmo that displays the string/number | Sets the displayed text in the text gizmo. |
 | :white_medium_small_square: | **Animation** |
@@ -111,11 +115,19 @@
 | :small_blue_diamond: | Play sound | play sound on [self] | object: The sound gizmo that will play | Plays a sound gizmo. | Note: A sound must be stopped before it can be played again. |
 | :small_blue_diamond: | Pause sound | pause sound on [self] | object: The sound gizmo that will pause | Pauses a sound gizmo. | Note: A sound must be stopped before it can be played again. |
 | :small_blue_diamond: | Stop sound | stop sound on [self] | object: The sound gizmo that will stop | Stops a sound gizmo. | Note: A sound must be stopped before it can be played again. |
-| :white_medium_small_square: | **Particles and Trails** |
+| :white_medium_small_square: | **VFX** |
 | :small_blue_diamond: | Play visual fx | play visual effects on [self] | object: The visual effect gizmo that will play | Plays a visual effects gizmo. |
 | :small_blue_diamond: | Stop visual fx | stop visual effects on [self] | object: The visual effect gizmo that will stop | Stops a visual effects gizmo. |
 | :white_medium_small_square: | **World**  |
 | :small_blue_diamond: | Reset world state | reset world state | | Resets the world back to its inital state. |
+| :white_medium_small_square: | **Player** |
+| :small_orange_diamond: | Transfer ownership of object to player |
+| :small_orange_diamond: | Owner of object |
+| :small_orange_diamond: | Play Haptics on player controller |
+| :small_orange_diamond: | Set player voice setting to |
+| :white_medium_small_square: | **Raycast** |
+| :small_orange_diamond: | Raycast |
+| :small_orange_diamond: | Raycast with overrides |
 
 ### Math
 
