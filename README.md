@@ -244,3 +244,18 @@
 | :small_blue_diamond: | string input | (string [.]) | | A string value. |
 | :white_medium_small_square: | **Constants** |
 | :small_orange_diamond: | Pi |
+
+### Variables Tab
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
+| :white_medium_small_square: | **Variables** |
+| :small_orange_diamond: | Number |
+| :small_orange_diamond: | Boolean |
+| :small_orange_diamond: | Object |
+| :small_orange_diamond: | Player |
+| :small_orange_diamond: | Vector |
+| :small_orange_diamond: | Rotation |
+| :small_orange_diamond: | Color |
+| :small_orange_diamond: | String |
+| :small_orange_diamond: | List |
+
