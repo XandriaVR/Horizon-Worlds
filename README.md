@@ -155,7 +155,7 @@ Source: https://support.oculus.com/487096395667734 (Note: This represents codebo
 | Name of player | name of [player] | | Returns the username of a player. | |
 | **Text** |   |   |   |   |
 | Length of string | length of [string] | | Returns the length of a string. | |
-| Variable as string | [string] as string | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. | |
+| Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. | |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Values** |   |   |   |   |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
