@@ -1,6 +1,6 @@
 # Horizon-Worlds
 ## How do I use code blocks in Horizon Worlds?
-Source: https://support.oculus.com/487096395667734 (Note: This represents codebocks available at one point during beta.)
+* :green_circle: Source: https://support.oculus.com/487096395667734 (Note: This represents codebocks available at one point during beta.)
 
 ### Events Tab
 
