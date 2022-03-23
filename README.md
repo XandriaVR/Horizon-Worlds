@@ -8,8 +8,8 @@
 
 ### Events Tab
 
-| Icon | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
-| --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :white_medium_small_square: | **Control** |
 | :small_orange_diamond: | if |
 | :small_orange_diamond: | else if |
@@ -56,15 +56,15 @@
 
 ### Motion Tab
 
-| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Instant Motion**  |   |   |   |   |
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
+| :white_medium_small_square: | **Instant Motion**  |
 | Move to | action [moveto with [vector 1 / 0 / 0]] on [self] | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
 | Move by | action [move with [vector 1 / 0 / 0]] on [self] | vector: The direction and distance the object will move by object: The object that the motion applies to | Instantly moves the object relative to its current position by adding the vector to the current position. | |
 | Rotate to | action [rotateto with [rotation 90 / 0 / 0]] on [self] | rotation: The angle the object will rotate to object: The object that the motion applies to | Instantly rotates the object to the rotation provided. | |
 | Rotate by | action [rotate with [rotation 90/ 0 / 0]] on [self] | rotation: The angle the object will rotate by object: The object that the motion applies to | Instantly rotates the object by adding the supplied rotation to the current rotation. | |
 | Scale to | action [scale with [vector 1 / 0 / 0]] on self]] | vector: The size the object will scale to object: The object that the motion applies to | Instantly sets the scale to the value provided. | |
-| **Motion Over Time**  |   |   |   |   |
+| :white_medium_small_square: | **Motion Over Time**  |
 | Move to over time | action [moveto with [vector 1 / 0 / 0] over [number {1} sec]] on [self] | vector: The positon in world space that the object moves to number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate over the given time. | |
 | Move by over time | action [move with [vector 1 / 0 / 0] over [number {1} sec]] on [self] | vector: The direction and distance the object will move by number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate that is the sum of the current position and the given coordinate, over the given time. | |
 | Rotate to over time | action [rotateto with [rotation 90 / 0 / 0] over [number {1} sec]] on [self] | rotation: The angle the object will rotate to number: the number of seconds it takes to rotate object: The object that the motion applies to | Rotates the object from its current rotation to the given rotation over the given time. |
@@ -72,7 +72,7 @@
 | Scale to over time | action [scale with [vector 1/ 1/ 1] over [number {1} sec]] on [self] | vector: The size the object will scale to number: the number of seconds it takes to scale object: The object that the motion applies to | Scales the object from its current scale to the given scale over the given time. |
 | **Player Motion**  |   |   |   |   |
 | Respawn player | action [respawn with [param]] on [self] | playerid: The player that will be respawned object: The spawn point to respawn them to | Teleports a player to a spawn point. | |
-| **Physical Motion**  |   |   |   |   |
+| :white_medium_small_square: | **Physical Motion**  |
 | Disable object physical motion | disable [self] physical motion | object: The object that physical motion is being disabled on | Locks a physics object in place. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | Enable object physical motion | enable [self] physical motion | object: The object that physical motion is being enabled on | Unlocks a physics object, allowing it to be moved. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | Push | action [+Velocity with [vector 1/ 1/ 1]] on [self] | vector: The velocity being added object: The object that physical motion is being applied to | The object's velocity becomes equal to its current velocity, plus the given velocity. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
@@ -86,9 +86,9 @@
 
 ### Actions Tab
 
-| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Object**  |   |   |   |   |
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
+| :white_medium_small_square: | **Object**  |
 | Show object | show [self] | object: The object that will turn visible | Makes object visible in your world. | Note: This will currently also affect collisions on an object. The object will be made collidable. |
 | Hide object | hide [self] | object: The object that will turn hidden | Hides the object in your world. | Note: This will currently also affect collisions on an object. The object will have collisions turned off. |
 | Paint object | action color with [color 1/ 0/ 0] on [self] | color: The rgb color to paint the object with object: The object that will be painted | Sets the color of the object. |
@@ -96,9 +96,9 @@
 | Disable object | disable [self] | object: The trigger that will be disabled | Disables a trigger's ability to detect people or objects. This can only be used on triggers. | |
 | Set simulated | action [setsimulated with boolean {true/false}] on [self] | boolean: The true or false value that the simulated property will be set to object: The object that will have its simulation set | Enables or disables the "simulated" property. If off, the object cannot move. | |
 | Set gravity | action [setgravity with boolean {true/false}] on [self] | boolean: The true or false value that the gravity property will be set to object: The object that will have its simulation set | Enables or disables gravity simulation on this object.If on, the object will fall to the floor. If off, it wil act like it's floating in space. | |
-| **Text** |   |   |   |   |
+| :white_medium_small_square: | **Text** |
 | Display text | action [display with [number {1}]] on [self] | string/number: The value the text gizmo will display object: The text gizmo that displays the string/number | Sets the displayed text in the text gizmo. | |
-| **Animation** |   |   |   |   |
+| :white_medium_small_square: | **Animation** |
 | Play animation | play animation on [self] | object: The object that will play its animation | Plays the object's animation. | |
 | Pause animation | pause animation on [self] | object: The object that will pause its animation | Pauses the object's animation. | |
 | Stop animation | stop animation on [self] | object: The object to stop its animation |
@@ -106,7 +106,7 @@
 | Play sound | play sound on [self] | object: The sound gizmo that will play | Plays a sound gizmo. | Note: A sound must be stopped before it can be played again. |
 | Pause sound | pause sound on [self] | object: The sound gizmo that will pause | Pauses a sound gizmo. | Note: A sound must be stopped before it can be played again. |
 | Stop sound | stop sound on [self] | object: The sound gizmo that will stop | Stops a sound gizmo. | Note: A sound must be stopped before it can be played again. |
-| **Particles and Trails** |   |   |   |   |
+| :white_medium_small_square: | **Particles and Trails** |
 | Play visual fx | play visual effects on [self] | object: The visual effect gizmo that will play | Plays a visual effects gizmo. | |
 | Stop visual fx | stop visual effects on [self] | object: The visual effect gizmo that will stop | Stops a visual effects gizmo. | |
 | **World**  |   |   |   |   |
@@ -114,134 +114,90 @@
 
 ### Math
 
-| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Logic**  |   |   |   |   |
-| "==" | [a] == [b] | | "true" if both values are the same. | |
-| != | [a] != [b] | | "true" if both values are not same. | |
-| < | [a] < [b] | | "true" if the first value is less than the second value | |
-| > | [a] > [b] | | "true" if the first value is greater than the second value | |
-| and | [a] and [b] | | "true" if both values are true. | |
-| not | not [a] | | toggles a boolean value from true to false, or false to true. (I think this correct?) | |
-| or | [a] or [b] | | "true" if one of the values is true. | | 
-| **Basic Operations**  |   |   |   |   |
-| "+" | [a] + [b] | | Returns the sum of two numbers. | |
-| - | [a] - [b] | | Returns the difference of two numbers. | |
-| * | [a] * [b] | | Returns the result of two multiplied numbers | |
-| / | [a] / [b] | | Returns the result of the first number divided by the second number. | |
-| % | [a] % [b] | | Returns the "remainder" of the first number divided by the second number. Useful for making counters that count up to a certain number and then go back to 0. | |
-| **Basic Math**  |   |   |   |   |
-| abs | abs [n] | | Returns the positive value of a number. So, abs -10 = 10 and abs 3 = 3. | |
-| ceil | ceil [n] | | Rounds a decimal number up to the next largest whole number. | |
-| clamp | clamp [value] [min] [max] | | If the value is less than the smallest number, return the smallest number. If the value is larger than the biggest number, return the biggest number. Otherwise return the value. | | 
-| floor | floor [n] | | Rounds a decimal number down to the next smallest whole number. | |
-| frac | frac [n] |   |   |   |
-| lerp | lerp [from] [to] [alpha] | | Given a minimum number, maximum number, and an interpolated value between those numbers, lerp will return a value that represents the point of the interpolated value. | |
-| max | max [a] [b] | | Returns the biggest number | |
-| min | min [a] [b] | | Returns the smalles number | |
-| sqrt | sqrt [n] | | Returns the square root of a number | |
-| **Advanced Math**  |   |   |   |   |
-| pow | pow [number] [power] |   |   |   |
-| cos | cos [radians] | | Returns the cosine value of a number, from -1.0 to 1.0. | |
-| sin | sin [radians] | | Returns the sine value of a number, from -1.0 to 1.0. | |
-| tan | tan [radians] |   |   |   |
-| acos | acos [radians] |   |   |   |
-| asin | asin [radians] |   |   |   |
-| atan2 | atan2 [y] [x] |   |   |   |
-| exp | exp [power] |   |   |   |
-| log10 | log10 [number] |   |   |   |
-| random number with decimals | random between [min] and [max] | | Returns a value that can contain fractional decimals, between the first number and the second number. | Note: This is inclusive of the [min] value and inclusive of the [max] value. |
-| random number | random integer between [min] and [max] | | Returns a whole number value, between the first number and the second number. | Note: This is inclusive of the [min] value and exclusive of the [max] value. |
-| 2d perlin noise | 2d perlin noise [x] [y] | | Returns a number value based on the perlin noise algorithm. | |
-| **Object Transformation** |   |   |   |   |
-| position of object | position of [o] |  |   |   |
-| rotation of object | rotation of [o] |  |   |   |
-| scale of object | scale of [o] |  |   |   |
-| velocity of object | velocity of [o] |  |   |   |
-| forward direction of object | forward direction of [object] |   |   |   |
-| upward direction of object | upward direction of [object] |   |   |   |
-| **Vector Math** |   |   |   |   |
-| new vector from xyz | new vector [x] [y] [z] |   |   |   |
-| x of vector | x of [vector] |   |   |   |
-| y of vector | y of [vector] |   |   |   |
-| z of vector | z of [vector] |   |   |   |
-| normalize | normalize [vector] |   |   |   |
-| dot | dot [a] [b] |   |   |   |
-| cross | cross [a] [b] |   |   |   |
-| distance to | distance from [a] to [b] |   |   |   |
-| magnitude of | magnitutde of [vector] |   |   |   |
-| reflect | reflect [vector] |   |   |   |
-| new rotation from xyz | new rotation [pitch] [yaw] [roll] |   |   |   |
-| look at | look towards [forward] with up [up] |   |   |   |
-| **Color** |   |   |   |   |
-| new color from rgb | new color [r] [g] [b] |   |   |   |
-| rgb to hsv | convert rgb to hsv [color] |   |   |   |
-| hsv to rgb | convert hsv to rgb [color] |   |   |   |
-| get object color | color of [o] |   |   |   |
-| **Player** |   |   |   |   |
-| Position of player | [head] position of [player] | | Can specify head, torso, left hand, right hand, and foot position of a player. | |
-| Forward of player | [head] forward of [player] | | Can specify head, torso, left hand, right hand, and foot forward of a player. | |
-| Name of player | name of [player] | | Returns the username of a player. | |
-| **Text** |   |   |   |   |
-| Length of string | length of [string] | | Returns the length of a string. | |
-| Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. | |
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
+| :small_blue_diamond: | :white_medium_small_square: | **Logic**  |
+| :small_blue_diamond: | "==" | [a] == [b] | | "true" if both values are the same. |
+| :small_blue_diamond: | != | [a] != [b] | | "true" if both values are not same. |
+| :small_blue_diamond: | < | [a] < [b] | | "true" if the first value is less than the second value |
+| :small_blue_diamond: | > | [a] > [b] | | "true" if the first value is greater than the second value |
+| :small_blue_diamond: | and | [a] and [b] | | "true" if both values are true. | |
+| :small_blue_diamond: | not | not [a] | | toggles a boolean value from true to false, or false to true. (I think this correct?) |
+| :small_blue_diamond: | or | [a] or [b] | | "true" if one of the values is true. |
+| :small_blue_diamond: | :white_medium_small_square: | **Basic Operations**  |
+| :small_blue_diamond: | "+" | [a] + [b] | | Returns the sum of two numbers. |
+| :small_blue_diamond: | - | [a] - [b] | | Returns the difference of two numbers. |
+| :small_blue_diamond: | * | [a] * [b] | | Returns the result of two multiplied numbers |
+| :small_blue_diamond: | / | [a] / [b] | | Returns the result of the first number divided by the second number. |
+| :small_blue_diamond: | % | [a] % [b] | | Returns the "remainder" of the first number divided by the second number. Useful for making counters that count up to a certain number and then go back to 0. |
+| :white_medium_small_square: | **Basic Math**  |
+| :small_blue_diamond: | abs | abs [n] | | Returns the positive value of a number. So, abs -10 = 10 and abs 3 = 3. |
+| :small_blue_diamond: | ceil | ceil [n] | | Rounds a decimal number up to the next largest whole number. |
+| :small_blue_diamond: | clamp | clamp [value] [min] [max] | | If the value is less than the smallest number, return the smallest number. If the value is larger than the biggest number, return the biggest number. Otherwise return the value. |
+| :small_blue_diamond: | floor | floor [n] | | Rounds a decimal number down to the next smallest whole number. |
+| :small_blue_diamond: | frac | frac [n] |
+| :small_blue_diamond: | lerp | lerp [from] [to] [alpha] | | Given a minimum number, maximum number, and an interpolated value between those numbers, lerp will return a value that represents the point of the interpolated value. |
+| :small_blue_diamond: | max | max [a] [b] | | Returns the biggest number |
+| :small_blue_diamond: | min | min [a] [b] | | Returns the smalles number |
+| :small_blue_diamond: | sqrt | sqrt [n] | | Returns the square root of a number |
+| :white_medium_small_square: | **Advanced Math**  |
+| :small_blue_diamond: | pow | pow [number] [power] |
+| :small_blue_diamond: | cos | cos [radians] | | Returns the cosine value of a number, from -1.0 to 1.0. |
+| :small_blue_diamond: | sin | sin [radians] | | Returns the sine value of a number, from -1.0 to 1.0. |
+| :small_blue_diamond: | tan | tan [radians] |
+| :small_blue_diamond: | acos | acos [radians] |
+| :small_blue_diamond: | asin | asin [radians] |
+| :small_blue_diamond: | atan2 | atan2 [y] [x] |
+| :small_blue_diamond: | exp | exp [power] |
+| :small_blue_diamond: | log10 | log10 [number] |
+| :small_blue_diamond: | random number with decimals | random between [min] and [max] | | Returns a value that can contain fractional decimals, between the first number and the second number. | Note: This is inclusive of the [min] value and inclusive of the [max] value. |
+| :small_blue_diamond: | random number | random integer between [min] and [max] | | Returns a whole number value, between the first number and the second number. | Note: This is inclusive of the [min] value and exclusive of the [max] value. |
+| :small_blue_diamond: | 2d perlin noise | 2d perlin noise [x] [y] | | Returns a number value based on the perlin noise algorithm. |
+| :white_medium_small_square: | **Object Transformation** |
+| :small_blue_diamond: | position of object | position of [o] |
+| :small_blue_diamond: | rotation of object | rotation of [o] |
+| :small_blue_diamond: | scale of object | scale of [o] |
+| :small_blue_diamond: | velocity of object | velocity of [o] |
+| :small_blue_diamond: | forward direction of object | forward direction of [object] |
+| :small_blue_diamond: | upward direction of object | upward direction of [object] |
+| :white_medium_small_square: | **Vector Math** |
+| :small_blue_diamond: | new vector from xyz | new vector [x] [y] [z] |
+| :small_blue_diamond: | x of vector | x of [vector] |
+| :small_blue_diamond: | y of vector | y of [vector] |
+| :small_blue_diamond: | z of vector | z of [vector] |
+| :small_blue_diamond: | normalize | normalize [vector] |
+| :small_blue_diamond: | dot | dot [a] [b] |
+| :small_blue_diamond: | cross | cross [a] [b] |
+| :small_blue_diamond: | distance to | distance from [a] to [b] | 
+| :small_blue_diamond: | magnitude of | magnitutde of [vector] |
+| :small_blue_diamond: | reflect | reflect [vector] |
+| :small_blue_diamond: | new rotation from xyz | new rotation [pitch] [yaw] [roll] |
+| :small_blue_diamond: | look at | look towards [forward] with up [up] |
+| :white_medium_small_square: | **Color** |
+| :small_blue_diamond: | new color from rgb | new color [r] [g] [b] |
+| :small_blue_diamond: | rgb to hsv | convert rgb to hsv [color] |
+| :small_blue_diamond: | hsv to rgb | convert hsv to rgb [color] |
+| :small_blue_diamond: | get object color | color of [o] |
+| :white_medium_small_square: | **Player** |
+| :small_blue_diamond: | Position of player | [head] position of [player] | | Can specify head, torso, left hand, right hand, and foot position of a player. |
+| :small_blue_diamond: | Forward of player | [head] forward of [player] | | Can specify head, torso, left hand, right hand, and foot forward of a player. |
+| :small_blue_diamond: | Name of player | name of [player] | | Returns the username of a player. |
+| :small_blue_diamond: | :white_medium_small_square: | **Text** |
+| :small_blue_diamond: | Length of string | length of [string] | | Returns the length of a string. |
+| :small_blue_diamond: | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |
 
 ### Values
 
-| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| set to | set [variable] to [value] |   |   |   |
-| **Debugging**
-| debug print | debug print [value] |   |   |   |
-| **Value Input** |   |   |   |   |
-| self | (self) | | Represents the object that the script is attached to. | | 
-| number input | (number [0]) | | A number value. | |
-| boolean input | [boolean [false]] | | A boolean value. | |
-| vector input | (vector [0] [0] [0]) | | A vector3 value. | |
-| rotation input | (rotation [0] [0] [0]) | | A rotation value. | |
-| color input | (color [1] [1] [1]) | | A color value. | |
-| string input | (string [.]) | | A string value. | |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
+| :small_blue_diamond: | set to | set [variable] to [value] |
+| :small_blue_diamond: | :white_medium_small_square: | **Debugging** |
+| :small_blue_diamond: | debug print | debug print [value] |
+| :small_blue_diamond: | :white_medium_small_square: | **Value Input** |
+| :small_blue_diamond: | self | (self) | | Represents the object that the script is attached to. | 
+| :small_blue_diamond: | number input | (number [0]) | | A number value. |
+| :small_blue_diamond: | boolean input | [boolean [false]] | | A boolean value. |
+| :small_blue_diamond: | vector input | (vector [0] [0] [0]) | | A vector3 value. |
+| :small_blue_diamond: | rotation input | (rotation [0] [0] [0]) | | A rotation value. |
+| :small_blue_diamond: | color input | (color [1] [1] [1]) | | A color value. |
+| :small_blue_diamond: | string input | (string [.]) | | A string value. |
