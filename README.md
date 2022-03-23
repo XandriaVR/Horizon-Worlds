@@ -63,9 +63,24 @@ Source: https://support.oculus.com/487096395667734
 | Disable object | disable [self] | object: The trigger that will be disabled | Disables a trigger's ability to detect people or objects. This can only be used on triggers. | |
 | Set simulated | action [setsimulated with boolean {true/false}] on [self] | boolean: The true or false value that the simulated property will be set to object: The object that will have its simulation set | Enables or disables the "simulated" property. If off, the object cannot move. | |
 | Set gravity | action [setgravity with boolean {true/false}] on [self] | boolean: The true or false value that the gravity property will be set to object: The object that will have its simulation set | Enables or disables gravity simulation on this object.If on, the object will fall to the floor. If off, it wil act like it's floating in space. | |
-| Text  |   |   |   |   |
-| Display text | action [display with [number {1}] on [self] | string/number: The value the text gizmo will display object: The text gizmo that displays the string/number | Sets the displayed text in the text gizmo. |
-| 
+| Text |   |   |   |   |
+| Display text | action [display with [number {1}]] on [self] | string/number: The value the text gizmo will display object: The text gizmo that displays the string/number | Sets the displayed text in the text gizmo. | |
+| Animation |   |   |   |   |
+| Play animation | play animation on [self] | object: The object that will play its animation | Plays the object's animation. | |
+| Pause animation | pause animation on [self] | object: The object that will pause its animation | Pauses the object's animation. | |
+| Stop animation | stop animation on [self] | object: The object to stop its animation |
+| Sound |   |   |   |   |
+| Play sound | play sound on [self] | object: The sound gizmo that will play | Plays a sound gizmo. | Note: A sound must be stopped before it can be played again. |
+| Pause sound | pause sound on [self] | object: The sound gizmo that will pause | Pauses a sound gizmo. | Note: A sound must be stopped before it can be played again. |
+| Stop sound | stop sound on [self] | object: The sound gizmo that will stop | Stops a sound gizmo. | Note: A sound must be stopped before it can be played again. |
+| Particles and Trails |   |   |   |   |
+| Play visual fx | play visual effects on [self] | object: The visual effect gizmo that will play | Plays a visual effects gizmo. | |
+| Stop visual fx | stop visual effects on [self] | object: The visual effect gizmo that will stop | Stops a visual effects gizmo. | |
+| World  |   |   |   |   |
+| Reset world state | reset world state | | Resets the world back to its inital state. | |
+| Math  |   |   |   |   |
+| Logic  |   |   |   |   |
+|
 
 
 
