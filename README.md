@@ -124,7 +124,7 @@
 | :small_blue_diamond: | and | [a] and [b] | | "true" if both values are true. | |
 | :small_blue_diamond: | not | not [a] | | toggles a boolean value from true to false, or false to true. (I think this correct?) |
 | :small_blue_diamond: | or | [a] or [b] | | "true" if one of the values is true. |
-| :small_blue_diamond: | :white_medium_small_square: | **Basic Operations**  |
+| :white_medium_small_square: | **Basic Operations**  |
 | :small_blue_diamond: | "+" | [a] + [b] | | Returns the sum of two numbers. |
 | :small_blue_diamond: | - | [a] - [b] | | Returns the difference of two numbers. |
 | :small_blue_diamond: | * | [a] * [b] | | Returns the result of two multiplied numbers |
