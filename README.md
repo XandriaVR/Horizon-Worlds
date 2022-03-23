@@ -29,6 +29,7 @@ Source: https://support.oculus.com/487096395667734
 | **Connections**  |   |   |   |   |
 | Connect to event | connect [self] [triggerenter] to local event [enter] | object: The object the where the non-local script event fires event: The event in the non-local script event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
 | **Motion Tab**  |   |   |   |   |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Instant Motion**  |   |   |   |   |
 | Move to action [moveto with [vector 1 / 0 / 0]] on [self] | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
 | Move by | action [move with [vector1 / 0 / 0]] on [self] | vector: The direction and distance the object will move by object: The object that the motion applies to | Instantly moves the object relative to its current position by adding the vector to the current position. | |
