@@ -80,7 +80,22 @@ Source: https://support.oculus.com/487096395667734
 | Reset world state | reset world state | | Resets the world back to its inital state. | |
 | **Math**  |   |   |   |   |
 | **Logic**  |   |   |   |   |
-|
+| "==" | [a] == [b] | | "true" if both values are the same. | |
+| != | [a] != [b] | | "true" if both values are not same. | |
+| < | [a] < [b] | | "true" if the first value is less than the second value | |
+| > | [a] > [b] | | "true" if the first value is greater than the second value | |
+| and | [a] and [b] | | "true" if both values are true. | |
+| not | not [a] | | toggles a boolean value from true to false, or false to true. (I think this correct?) | |
+| or | [a] or [b] | | "true" if one of the values is true. | | 
+| **Basic Operations**  |   |   |   |   |
+| "+" | [a] + [b] | | Returns the sum of two numbers. | |
+| - | [a] - [b] | | Returns the difference of two numbers. | |
+| * | [a] * [b] | | Returns the result of two multiplied numbers | |
+| / | [a] / [b] | | Returns the result of the first number divided by the second number. | |
+| % | [a] % [b] | | Returns the "remainder" of the first number divided by the second number. Useful for making counters that count up to a certain number and then go back to 0. | |
+| **Basic Math**  |   |   |   |   |
+| abs | abs [n] | | Returns the positive value of a number. So, abs -10 = 10 and abs 3 = 3. |
+| ceil | ceil [n] | | Rounds a decimal number up to the next largest whole number. | 
 
 
 
