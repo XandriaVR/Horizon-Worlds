@@ -210,7 +210,7 @@
 | :white_medium_small_square: | **Text** |
 | :small_blue_diamond: | Length of string | length of [string] | | Returns the length of a string. |
 | :small_orange_diamond: | Substring of string |
-~~| :small_blue_diamond: | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |~~
+| :small_blue_diamond: | ~~Variable as string~~ | ~~[string] as string~~ | | ~~Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together.~~ |
 | :white_medium_small_square: | **List** |
 | :small_orange_diamond: | Length of list |
 | :small_orange_diamond: | Add to list |
