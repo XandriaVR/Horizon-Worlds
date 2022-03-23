@@ -1,10 +1,12 @@
 # Horizon-Worlds
 ## How do I use code blocks in Horizon Worlds?
-Source: https://support.oculus.com/487096395667734
+Source: https://support.oculus.com/487096395667734 (Note: This represents codebocks available during beta.)
 
 | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Events**  |   |   |   |   |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
 | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. | |
 | When event is received | When event[myevent] with [obj] is received | | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | |
 | When trigger is entered by object | When event [triggerenter] with [obj] is received | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. |
@@ -154,7 +156,9 @@ Source: https://support.oculus.com/487096395667734
 | **Text** |   |   |   |   |
 | Length of string | length of [string] | | Returns the length of a string. | |
 | Variable as string | [string] as string | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. | |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Values** |   |   |   |   |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
 | set to | set [variable] to [value] |   |   |   |
 | **Debugging**
 | debug print | debug print [value] |   |   |   |
