@@ -120,6 +120,18 @@ Source: https://support.oculus.com/487096395667734
 | exp | exp [power] |   |   |   |
 | log10 | log10 [number] |   |   |   |
 | random number with decimals | random between [min] and [max] | | Returns a value that can contain fractional decimals, between the first number and the second number. | Note: This is inclusive of the [min] value and inclusive of the [max] value. |
+| random number | random integer between [min] and [max] | | Returns a whole number value, between the first number and the second number. | Note: This is inclusive of the [min] value and exclusive of the [max] value. |
+| 2d perlin noise | 2d perlin noise [x] [y] | | Returns a number value based on the perlin noise algorithm. | |
+| **Object Transformation** |   |   |   |   |
+| position of object | position of [o] |  |   |   |
+| rotation of object | rotation of [o] |  |   |   |
+| scale of object | scale of [o] |  |   |   |
+| velocity of object | velocity of [o] |  |   |   |
+| forward direction of object | forward direction of [object] |   |   |   |
+| upward direction of object | upward direction of [object] |   |   |   |
+| **Vector Math** |   |   |   |   |
+
+
 
 
 
