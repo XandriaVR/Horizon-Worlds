@@ -130,7 +130,42 @@ Source: https://support.oculus.com/487096395667734
 | forward direction of object | forward direction of [object] |   |   |   |
 | upward direction of object | upward direction of [object] |   |   |   |
 | **Vector Math** |   |   |   |   |
-
+| new vector from xyz | new vector [x] [y] [z] |   |   |   |
+| x of vector | x of [vector] |   |   |   |
+| y of vector | y of [vector] |   |   |   |
+| z of vector | z of [vector] |   |   |   |
+| normalize | normalize [vector] |   |   |   |
+| dot | dot [a] [b] |   |   |   |
+| cross | cross [a] [b] |   |   |   |
+| distance to | distance from [a] to [b] |   |   |   |
+| magnitude of | magnitutde of [vector] |   |   |   |
+| reflect | reflect [vector] |   |   |   |
+| new rotation from xyz | new rotation [pitch] [yaw] [roll] |   |   |   |
+| look at | look towards [forward] with up [up] |   |   |   |
+| **Color** |   |   |   |   |
+| new color from rgb | new color [r] [g] [b] |   |   |   |
+| rgb to hsv | convert rgb to hsv [color] |   |   |   |
+| hsv to rgb | convert hsv to rgb [color] |   |   |   |
+| get object color | color of [o] |   |   |   |
+| **Player** |   |   |   |   |
+| Position of player | [head] position of [player] | | Can specify head, torso, left hand, right hand, and foot position of a player. | |
+| Forward of player | [head] forward of [player] | | Can specify head, torso, left hand, right hand, and foot forward of a player. | |
+| Name of player | name of [player] | | Returns the username of a player. | |
+| **Text** |   |   |   |   |
+| Length of string | length of [string] | | Returns the length of a string. | |
+| Variable as string | [string] as string | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. | |
+| **Values** |   |   |   |   |
+| set to | set [variable] to [value] |   |   |   |
+| **Debugging**
+| debug print | debug print [value] |   |   |   |
+| **Value Input** |   |   |   |   |
+| self | (self) | | Represents the object that the script is attached to. | | 
+| number input | (number [0]) | | A number value. | |
+| boolean input | [boolean [false]] | | A boolean value. | |
+| vector input | (vector [0] [0] [0]) | | A vector3 value. | |
+| rotation input | (rotation [0] [0] [0]) | | A rotation value. | |
+| color input | (color [1] [1] [1]) | | A color value. | |
+| string input | (string [.]) | | A string value. | |
 
 
 
