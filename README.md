@@ -129,20 +129,22 @@
 | :small_orange_diamond: | Raycast |
 | :small_orange_diamond: | Raycast with overrides |
 
-### Math
+### Operators Tab
 
 | Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :white_medium_small_square: | **Logic**  |
-| :small_blue_diamond: | "==" | [a] == [b] | | "true" if both values are the same. |
+| :small_blue_diamond: | == | [a] == [b] | | "true" if both values are the same. |
 | :small_blue_diamond: | != | [a] != [b] | | "true" if both values are not same. |
 | :small_blue_diamond: | < | [a] < [b] | | "true" if the first value is less than the second value |
 | :small_blue_diamond: | > | [a] > [b] | | "true" if the first value is greater than the second value |
+| :small_orange_diamond: | <= | [a] <= [b] | | "true" if the first value is less than or equal to the second value |
+| :small_orange_diamond: | >= | [a] >= [b] | | "true" if the first value is greater than or equal to the second value |
 | :small_blue_diamond: | and | [a] and [b] | | "true" if both values are true. | |
 | :small_blue_diamond: | not | not [a] | | toggles a boolean value from true to false, or false to true. (I think this correct?) |
 | :small_blue_diamond: | or | [a] or [b] | | "true" if one of the values is true. |
 | :white_medium_small_square: | **Basic Operations**  |
-| :small_blue_diamond: | "+" | [a] + [b] | | Returns the sum of two numbers. |
+| :small_blue_diamond: | + | [a] + [b] | | Returns the sum of two numbers. |
 | :small_blue_diamond: | - | [a] - [b] | | Returns the difference of two numbers. |
 | :small_blue_diamond: | * | [a] * [b] | | Returns the result of two multiplied numbers |
 | :small_blue_diamond: | / | [a] / [b] | | Returns the result of the first number divided by the second number. |
