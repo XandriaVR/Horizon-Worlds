@@ -10,15 +10,28 @@
 
 | Icon | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
-| :white_medium_small_square: |
-| :small_blue_diamond: | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. | |
-| :small_blue_diamond: | When event is received | When event[myevent] with [obj] is received | | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | |
+| :white_medium_small_square: | **Control** |
+| :small_orange_diamond: | if |
+| :small_orange_diamond: | else if |
+| :small_orange_diamond: | else |
+| | :small_orange_diamond: | while |
+| :white_medium_small_square: | **Events** |
+| :small_blue_diamond: | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. |
+| :small_blue_diamond: | When event is received | When event[myevent] with [obj] is received | | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. |
+| :white_medium_small_square: | **Event Actions** |
+| :small_blue_diamond: | Send event to object | Send event [myevent] to [self] with [param] | Object: The object that the event is sent to <br><br>param: The parameters the event will receive | Sends a custom event to an object variable. The event will be received by the object that is being referenced by the object variable. | 
+| :small_blue_diamond: | Send event with delay | Send event [myevent] to [self] after [number] seconds | Object: The object the event is sent to <br><br>number: The number of seconds to delay | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. |
+| :small_blue_diamond: | Cancel sending event with delay | Cancel sending event [myevent] to [self] | Object: The object to stop sending a custom event to | Cancels a custom event from being sent. |
+| :white_medium_small_square: | **Collision Events** |
 | :small_blue_diamond: | When trigger is entered by object | When event [triggerenter] with [obj] is received | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. |
 | :small_blue_diamond: | When trigger is exited by object | When event [triggerexit] with [obj] is received | Object: The object that exited trigger | Event runs when an object exits the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. |
-| :small_blue_diamond: | When trigger is entered by player | When event [triggerenter] with [player] is received | Player: The player that entered the trigger | Event runs when a player enters the trigger gizmo. | Note: The trigger must be configured to detect players. |
-| :small_blue_diamond: | When trigger is exited by player | When event [triggerexit] with [player] is received | Player: The player that exited the trigger | Event runs when a player exits the trigger gizmo. | Note: The trigger must be configured to detect players. |
 | :small_blue_diamond: | When colliding with object | When event [collisionenter] with [object] is received | Object: The object that collided with the object that this script is attached to. | Event runs when object collides with another object. | Note: The object must be configured to detect collisions. |
 | :small_blue_diamond: | When colliding with player | When event [collisionenter] with [player] is received | Player: The player that collided with the object this script it attached to. | | Event runs when object collides with the players head or torso. | Note: The object must be configured to detect collisions. |
+| :white_medium_small_square: | **Player Events** |
+| :small_blue_diamond: | When trigger is entered by player | When event [triggerenter] with [player] is received | Player: The player that entered the trigger | Event runs when a player enters the trigger gizmo. | Note: The trigger must be configured to detect players. |
+| :small_blue_diamond: | When trigger is exited by player | When event [triggerexit] with [player] is received | Player: The player that exited the trigger | Event runs when a player exits the trigger gizmo. | Note: The trigger must be configured to detect players. |
+
+
 | :small_blue_diamond: | When object is grabbed by player | When event [grabstart] with [player] is received | Player: The player that grabbed the object that this script it attached to | | Event runs when this object is grabbed by a player. |
 | :small_blue_diamond: | When object is released by player | When event [grabend] with [player] is received | Player: The player that released the object that this script it attached to | Event runs when this object is released by a player. |
 | :small_blue_diamond: | When object is attached to player | When event [attachstart] with [player] is received | Player: The player that attached the object that this script it attached to | Event runs when this object is attached to a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
@@ -29,9 +42,6 @@
 | :small_blue_diamond: | When button1 is released | When event [button1up] with [player] is received while self is grabbed | Player: The player that released button 1 while holding the object that this script it attached to | Event runs when button 1 on the oculus controller is released. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
 | :small_blue_diamond: | When button2 is pressed | When event [button2down] with [player] is received while self is grabbed | Player: The player that released button 2 while holding the object that this script it attached to | Event runs when button 2 on the oculus controller is pressed. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. | 
 | :small_blue_diamond: | When button2 is released | When event [button2up] with [player] is received while self is grabbed | Player: The player that released button 2 while holding the object that this script it attached to | Event runs when button 2 on the oculus controller is released. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
-| :small_blue_diamond: | Send event to object | Send event [myevent] to [self] with [param] | Object: The object that the event is sent to <br><br>param: The parameters the event will receive | Sends a custom event to an object variable. The event will be received by the object that is being referenced by the object variable. | | 
-| :small_blue_diamond: | Send event with delay | Send event [myevent] to [self] after [number] seconds | Object: The object the event is sent to <br><br>number: The number of seconds to delay | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. |
-| :small_blue_diamond: | Cancel sending event with delay | Cancel sending event [myevent] to [self] | Object: The object to stop sending a custom event to | Cancels a custom event from being sent. |
 | :white_circle: | **Connections**  |   |   |   |   |
 | :small_blue_diamond: | Connect to event | connect [self] [triggerenter] to local event [enter] | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
 
