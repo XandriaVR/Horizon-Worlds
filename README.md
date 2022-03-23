@@ -59,8 +59,10 @@ Source: https://support.oculus.com/487096395667734 (Note: This represents codebo
 | Spin in local space | action [+AngVelLocal with [vector 1/ 0/ 0]] on [self] | vector: The angular velocity being added object: The object that physical motion is being applied to | The given velocity is rotated to the object's current rotation, then a Spin runs (x becomes pitch, y becomes yaw, z becomes roll). | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | Stop physical motion | stop physical motion [self] | object: The object that the physical motion is being stopped on | The object's velocity and angular velocity both become zero. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | Launch from object | action [LaunchFrom with [self] [number {10}]] on [self] | object: The object whose position and direction will be used to launch from number: The speed to launch it at object: The object that will be launched | Makes the object become owned by the same owner of the "launch from" object (i.e. object specified by the first parameter), sets the position and rotation of the object to match that of the "launch from" object, and then sets the object's velocity to match its forward direction with a magnitude (speed) equal to the value of the second parameter. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Actions Tab**  |   |   |   |   |
+
+### Actions Tab
+
+| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Object**  |   |   |   |   |
 | Show object | show [self] | object: The object that will turn visible | Makes object visible in your world. | Note: This will currently also affect collisions on an object. The object will be made collidable. |
@@ -85,8 +87,10 @@ Source: https://support.oculus.com/487096395667734 (Note: This represents codebo
 | Stop visual fx | stop visual effects on [self] | object: The visual effect gizmo that will stop | Stops a visual effects gizmo. | |
 | **World**  |   |   |   |   |
 | Reset world state | reset world state | | Resets the world back to its inital state. | |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Math**  |   |   |   |   |
+
+### Math
+
+| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | **Logic**  |   |   |   |   |
 | "==" | [a] == [b] | | "true" if both values are the same. | |
@@ -157,8 +161,10 @@ Source: https://support.oculus.com/487096395667734 (Note: This represents codebo
 | **Text** |   |   |   |   |
 | Length of string | length of [string] | | Returns the length of a string. | |
 | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. | |
-| --------------- | --------------- | --------------- | --------------- | --------------- |
-| **Values** |   |   |   |   |
+
+### Values
+
+| Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
 | set to | set [variable] to [value] |   |   |   |
 | **Debugging**
