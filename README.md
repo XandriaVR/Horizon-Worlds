@@ -169,6 +169,9 @@
 | :small_blue_diamond: | atan2 | atan2 [y] [x] |
 | :small_blue_diamond: | exp | exp [power] |
 | :small_blue_diamond: | log10 | log10 [number] |
+| :small_orange_diamond: | radians to degrees |
+| :small_orange_diamond: | degrees to radians |
+| :white_medium_small_square: | **Random Numbers** |
 | :small_blue_diamond: | random number with decimals | random between [min] and [max] | | Returns a value that can contain fractional decimals, between the first number and the second number. | Note: This is inclusive of the [min] value and inclusive of the [max] value. |
 | :small_blue_diamond: | random number | random integer between [min] and [max] | | Returns a whole number value, between the first number and the second number. | Note: This is inclusive of the [min] value and exclusive of the [max] value. |
 | :small_blue_diamond: | 2d perlin noise | 2d perlin noise [x] [y] | | Returns a number value based on the perlin noise algorithm. |
@@ -196,14 +199,28 @@
 | :small_blue_diamond: | new color from rgb | new color [r] [g] [b] |
 | :small_blue_diamond: | rgb to hsv | convert rgb to hsv [color] |
 | :small_blue_diamond: | hsv to rgb | convert hsv to rgb [color] |
-| :small_blue_diamond: | get object color | color of [o] |
+| :small_blue_diamond: | color of object | color of [o] |
 | :white_medium_small_square: | **Player** |
 | :small_blue_diamond: | Position of player | [head] position of [player] | | Can specify head, torso, left hand, right hand, and foot position of a player. |
-| :small_blue_diamond: | Forward of player | [head] forward of [player] | | Can specify head, torso, left hand, right hand, and foot forward of a player. |
+| :small_blue_diamond: | Forward direction of player | [head] forward of [player] | | Can specify head, torso, left hand, right hand, and foot forward of a player. |
+| :small_orange_diamond: | Upward direction of player |
 | :small_blue_diamond: | Name of player | name of [player] | | Returns the username of a player. |
+| :small_orange_diamond: | Get player index |
+| :small_orange_diamond: | Get player from index |
 | :white_medium_small_square: | **Text** |
 | :small_blue_diamond: | Length of string | length of [string] | | Returns the length of a string. |
-| :small_blue_diamond: | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |
+| :small_orange_diamond: | Substring of string |
+~~| :small_blue_diamond: | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |~~
+| :white_medium_small_square: | **List** |
+| :small_orange_diamond: | Length of list |
+| :small_orange_diamond: | Add to list |
+| :small_orange_diamond: | Set Value at index in list |
+| :small_orange_diamond: | Remove item at index from list |
+| :small_orange_diamond: | Clear list |
+| :small_orange_diamond: | Get item from list |
+| :small_orange_diamond: | Index of item in list |
+| :white_medium_small_square: | **Raycast** |
+| :small_orange_diamond: | Get raycast data |
 
 ### Values
 
