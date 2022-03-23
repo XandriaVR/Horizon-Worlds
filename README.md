@@ -1,10 +1,11 @@
 # Horizon-Worlds
-## How do I use code blocks in Horizon Worlds?
-* :green_circle: Source: https://support.oculus.com/487096395667734 (Note: This represents codebocks available at one point during beta.)
+## Code block
+:large_blue_circle: Source of this data is from: https://support.oculus.com/487096395667734 (Note: This code bocks data was created during beta.)
+:orange_circle: Source of this data is from Code Block Reference PDF (Note: this data is newer)
 
 ### Events Tab
 
-| New | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
+| Icon | Item in Library | Item in Folder  | Parameters      | Description     | Tips            |
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
 | :green_circle: | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. | |
 | :green_circle: | When event is received | When event[myevent] with [obj] is received | | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | |
