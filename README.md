@@ -37,8 +37,8 @@
 | :small_orange_diamond: | When projectile hits interactive object | When projectile hits interactive object [obj] [pos] [normal] | Object: what was hit <br><br>Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits an interactive object |
 | :small_orange_diamond: | When projectile hits static object | When projectile hits static object [pos] [normal] | Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits a static object |
 | :white_medium_small_square: | **Grab Events** |
-| :small_blue_diamond: | When object is grabbed by player | When event [grabstart] with [player] is received | Player: The player that grabbed the object that this script it attached to | | Event runs when this object is grabbed by a player. |
-| :small_blue_diamond: | When object is released by player | When event [grabend] with [player] is received | Player: The player that released the object that this script it attached to | Event runs when this object is released by a player. |
+| :small_blue_diamond: | When object is grabbed by player | ~~When event [grabstart] with [player] is received~~ When object is grabbed by [player] | Player: The player that grabbed the object that this script it attached to. | Event runs when this object is grabbed by a player. |
+| :small_blue_diamond: | When object is released by player | ~~When event [grabend] with [player] is received~~ When object is released by [player] | Player: The player that released the object that this script it attached to. :small_orange_diamond: Also executes when a player leaves the world while holding the object. | Event runs when this object is released by a player. |
 | :small_orange_diamond: | When object is grabbed by 2 hands |
 | :small_orange_diamond: | When object is no longer grabbed by 2 hands |
 | :white_medium_small_square: | **Attachable Events** |
