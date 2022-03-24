@@ -33,7 +33,7 @@
 | :small_orange_diamond: | When player enters the world | When world is entered by [player] | Player: The player who eneters the world | Executes when player enters the world and when world is reset | Note: Also executes when a builder enters preview mode.
 | :small_orange_diamond: | When player exits the world | When world is exited by [player] | Player: The player who exits the world | | Executes when player exists the world | Note: Also executes when a bulder enters build mode. |
 | :white_medium_small_square: | **Projectile Events** |
-| :small_orange_diamond: | When projectile hits player | When projectile hits player [player] [pos] [normal] [head] | Player: who was hit <br><br>Pos: vector where porjectile hit <br><br>Normal: direction vector, indicates which side of the player was hit <br><br>Head: boolean returns true if players head was hit | Executes when projectile from the launcher gizmo hits a player. The projectile launcher gizmo receives the event with four parameters. |
+| :small_orange_diamond: | When projectile hits player | When projectile hits player [player] [pos] [normal] [head] | Player: who was hit <br><br>Pos: vector where projectile hit <br><br>Normal: direction vector, indicates which side of the player was hit <br><br>Head: boolean returns true if players head was hit | Executes when projectile from the launcher gizmo hits a player. The projectile launcher gizmo receives the event with four parameters. |
 | :small_orange_diamond: | When projectile hits interactive object | When projectile hits interactive object [obj] [pos] [normal] | 
 | :small_orange_diamond: | When projectile hits static object |
 | :white_medium_small_square: | **Grab Events** |
