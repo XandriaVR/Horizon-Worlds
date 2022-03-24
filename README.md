@@ -39,8 +39,8 @@
 | :white_medium_small_square: | **Grab Events** |
 | :small_blue_diamond: | When object is grabbed by player | ~~When event [grabstart] with [player] is received~~ When object is grabbed by [player] | Player: The player that grabbed the object that this script it attached to. | Event runs when this object is grabbed by a player. |
 | :small_blue_diamond: | When object is released by player | ~~When event [grabend] with [player] is received~~ When object is released by [player] | Player: The player that released the object that this script it attached to. :small_orange_diamond: Also executes when a player leaves the world while holding the object. | Event runs when this object is released by a player. |
-| :small_orange_diamond: | When object is grabbed by 2 hands |
-| :small_orange_diamond: | When object is no longer grabbed by 2 hands |
+| :small_orange_diamond: | When object is grabbed by 2 hands | When object is grabbed by 2 hands of [player] |
+| :small_orange_diamond: | When object is no longer grabbed by 2 hands | When object is no longer grabbed by 2 hands [player] |
 | :white_medium_small_square: | **Attachable Events** |
 | :small_blue_diamond: | When object is attached to player | When event [attachstart] with [player] is received | Player: The player that attached the object that this script it attached to | Event runs when this object is attached to a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 | :small_blue_diamond: | When object is unattached from player | When event [attachend] with [player] is received | Player: The player that unattached the object that this script it attached to | Event runs when this object is detached from a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
