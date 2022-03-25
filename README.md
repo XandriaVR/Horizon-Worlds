@@ -63,7 +63,7 @@
 | :small_blue_diamond: | When object is grabbed by player | `When object is grabbed by [player]` <br>---<br> <sub>When event [grabstart] with [player] is received</sub> | Player: The player that grabbed the object that this script it attached to. | Event runs when this object is grabbed by a player. |
 | :small_blue_diamond: | When object is released by player | `When object is released by [player]` <br>---<br> <sub>When event [grabend] with [player] is received</sub> | Player: The player that released the object that this script it attached to. :small_orange_diamond: Also executes when a player leaves the world while holding the object. | Event runs when this object is released by a player. |
 | :small_orange_diamond: | When object is grabbed by 2 hands | `When object is grabbed by 2 hands of [player]` |
-| :small_orange_diamond: | When object is no longer grabbed by 2 hands | When object is no longer grabbed by 2 hands [player] |
+| :small_orange_diamond: | When object is no longer grabbed by 2 hands | `When object is no longer grabbed by 2 hands [player]` |
 
 ### :white_small_square: Attachable Events
 
@@ -87,7 +87,7 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | Connect to event | `connect [self]` [triggerenter] to local event [enter] | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
+| :small_blue_diamond: | Connect to event | `connect [self] [triggerenter] to local event [enter]` | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
 | :small_orange_diamond: | Listen to events |
 
 ## Motion Tab
