@@ -1,6 +1,6 @@
 # Horizon-Worlds
-## Code block
-:small_orange_diamond: Source of this data is from Code Block Reference PDFS found in [Horizon Worlds Community > Guides > Guide 7: Code Blocks|https://www.facebook.com/groups/horizonworlds/learning_content/?filter=485855206185443] (Note: newest data)
+## Code Blocks
+:small_orange_diamond: Source of this data is from Code Block Reference PDFS found in [Horizon Worlds Community > Guides > Guide 7: Code Blocks](https://www.facebook.com/groups/horizonworlds/learning_content/?filter=485855206185443) (Note: newest data)
 
 :small_blue_diamond: Source of this data is from: https://support.oculus.com/487096395667734 (Note: older data)
 
@@ -15,10 +15,18 @@
 | :small_orange_diamond: | else if | else if [condition] | Boolean: condition needs to evaluate to true | When else if condition evaluates to true, execute the nested command(s). | Note: must be placed directy below an if codeblock. | 
 | :small_orange_diamond: | else | else | | Will run nested commands if the if codeblock evaluates to false. | Note: must be placed directly below an if or else if codeblock. |
 | :small_orange_diamond: | while | while [condition] | Boolean: condition needs to evaluate to true | Will execute nested command(s) while the condition evaluates to true. | Note: limited to x amount of executions to avoid expensive/infinite loops. Use an event loop if you reach the limit.
-| :white_medium_small_square: | **Events** |
+
+#### Events
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When world is started | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. :small_orange_diamond: Also runs after using reset world codeblock and at the start of a local script. |
 | :small_blue_diamond: | When event is received | When event [myevent] is received with [param] | :small_orange_diamond: Up to 3 parameters can be received. They can be any value type, except list. | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | :small_orange_diamond: Note: names given to input parmeters are local to the event. Use set to codebock to assign it's value to a variable and make it available to the entire script.
-| :white_medium_small_square: | **Event Actions** |
+
+#### Event Actions
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Send event to object | Send event [myevent] to [self] with [param] | Object: (self, object, or player) that the event is sent to <br><br>param: Up to 3 parameters the event can send | Sends a custom event to an object variable. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. |
 | :small_blue_diamond: | Send event with delay | Send event [myevent] to [self] after [number] seconds with [param] | Object: (self, object, or player) the event is sent to <br><br>number: The number of seconds to delay <br><br>:small_orange_diamond: param: Up to 3 parameters the event can send | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. Only one of each delayed event can be sent at a time. | 
 | :small_blue_diamond: | Cancel sending event with delay | Cancel sending event [myevent] to [self] | Object: (self, object, or player) to stop sending a custom event to | Cancels a custom event from being sent. |
