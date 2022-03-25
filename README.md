@@ -226,11 +226,11 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | + | `[a] + [b]` | | Returns the sum of two numbers. |
-| :small_blue_diamond: | - | `[a] - [b]` | | Returns the difference of two numbers. |
-| :small_blue_diamond: | * | `[a] * [b]` | | Returns the result of two multiplied numbers |
-| :small_blue_diamond: | / | `[a] / [b]` | | Returns the result of the first number divided by the second number. |
-| :small_blue_diamond: | % | `[a] % [b]` | | Returns the "remainder" of the first number divided by the second number. Useful for making counters that count up to a certain number and then go back to 0. |
+| :small_blue_diamond: | + | `[a]+[b]` | | Returns the sum of two numbers. |
+| :small_blue_diamond: | - | `[a]-[b]` | | Returns the difference of two numbers. |
+| :small_blue_diamond: | * | `[a]*[b]` | | Returns the result of two multiplied numbers |
+| :small_blue_diamond: | / | `[a]/[b]` | | Returns the result of the first number divided by the second number. |
+| :small_blue_diamond: | % | `[a]%[b]` | | Returns the "remainder" of the first number divided by the second number. Useful for making counters that count up to a certain number and then go back to 0. |
 
 ### :white_small_square: Basic Math
 
