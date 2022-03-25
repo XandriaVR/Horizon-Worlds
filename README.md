@@ -92,27 +92,40 @@
 
 ### Motion Tab
 
+#### Instant Motion
+
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :white_medium_small_square: | **Instant Motion**  |
 | :small_blue_diamond: | Move to | action [moveto with [vector 1 / 0 / 0]] on [self] | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
 | :small_blue_diamond: | Move by | action [move with [vector 1 / 0 / 0]] on [self] | vector: The direction and distance the object will move by object: The object that the motion applies to | Instantly moves the object relative to its current position by adding the vector to the current position. | |
 | :small_blue_diamond: | Rotate to | action [rotateto with [rotation 90 / 0 / 0]] on [self] | rotation: The angle the object will rotate to object: The object that the motion applies to | Instantly rotates the object to the rotation provided. |
 | :small_blue_diamond: | Rotate by | action [rotate with [rotation 90/ 0 / 0]] on [self] | rotation: The angle the object will rotate by object: The object that the motion applies to | Instantly rotates the object by adding the supplied rotation to the current rotation. |
 | :small_blue_diamond: | Scale to | action [scale with [vector 1 / 0 / 0]] on self]] | vector: The size the object will scale to object: The object that the motion applies to | Instantly sets the scale to the value provided. |
 | :small_orange_diamond: | Scale by |
-| :white_medium_small_square: | **Motion Over Time**  |
+
+#### Motion Over Time
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Move to over time | action [moveto with [vector 1 / 0 / 0] over [number {1} sec]] on [self] | vector: The positon in world space that the object moves to number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate over the given time. |
 | :small_blue_diamond: | Move by over time | action [move with [vector 1 / 0 / 0] over [number {1} sec]] on [self] | vector: The direction and distance the object will move by number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate that is the sum of the current position and the given coordinate, over the given time. |
 | :small_blue_diamond: | Rotate to over time | action [rotateto with [rotation 90 / 0 / 0] over [number {1} sec]] on [self] | rotation: The angle the object will rotate to number: the number of seconds it takes to rotate object: The object that the motion applies to | Rotates the object from its current rotation to the given rotation over the given time. |
 | :small_blue_diamond: | Rotate by over time | action [rotate with [rotation 90 / 0 / 0] over [number {1} sec]] on [self] | rotation: The angle the object will rotate by number: the number of seconds it takes to rotate object: The object that the motion applies to | Rotates the object from its current rotation by the given rotation over the given time. |
 | :small_blue_diamond: | Scale to over time | action [scale with [vector 1/ 1/ 1] over [number {1} sec]] on [self] | vector: The size the object will scale to number: the number of seconds it takes to scale object: The object that the motion applies to | Scales the object from its current scale to the given scale over the given time. |
 | :small_orange_diamond: | Scale by over time |
-| :white_medium_small_square: | **Player Motion**  |
+
+#### Player Motion
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Respawn player | action [respawn with [param]] on [self] | playerid: The player that will be respawned object: The spawn point to respawn them to | Teleports a player to a spawn point. |
 | :small_orange_diamond: | Set player speed |
 | :small_orange_diamond: | Set player gravity |
-| :white_medium_small_square: | **Physical Motion**  |
+
+#### Physical Motion
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Disable object physical motion | disable [self] physical motion | object: The object that physical motion is being disabled on | Locks a physics object in place. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | :small_blue_diamond: | Enable object physical motion | enable [self] physical motion | object: The object that physical motion is being enabled on | Unlocks a physics object, allowing it to be moved. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | :small_blue_diamond: | Push | action [+Velocity with [vector 1/ 1/ 1]] on [self] | vector: The velocity being added object: The object that physical motion is being applied to | The object's velocity becomes equal to its current velocity, plus the given velocity. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
@@ -126,9 +139,10 @@
 
 ### Actions Tab
 
+#### Object
+
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :white_medium_small_square: | **Object**  |
 | :small_blue_diamond: | Show object | show [self] | object: The object that will turn visible | Makes object visible in your world. | Note: This will currently also affect collisions on an object. The object will be made collidable. |
 | :small_blue_diamond: | Hide object | hide [self] | object: The object that will turn hidden | Hides the object in your world. | Note: This will currently also affect collisions on an object. The object will have collisions turned off. |
 | :small_blue_diamond: | Paint object | action color with [color 1/ 0/ 0] on [self] | color: The rgb color to paint the object with object: The object that will be painted | Sets the color of the object. |
@@ -140,27 +154,57 @@
 | :small_orange_diamond: | Launch projectile |
 | :small_orange_diamond: | Launch projectile at speed |
 | :small_orange_diamond: | Set projectile gravity |
-| :white_medium_small_square: | **Text** |
+
+#### Text
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Display text | action [display with [number {1}]] on [self] | string/number: The value the text gizmo will display object: The text gizmo that displays the string/number | Sets the displayed text in the text gizmo. |
-| :white_medium_small_square: | **Animation** |
+
+#### Animation
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Play animation | play animation on [self] | object: The object that will play its animation | Plays the object's animation. |
 | :small_blue_diamond: | Pause animation | pause animation on [self] | object: The object that will pause its animation | Pauses the object's animation. |
 | :small_blue_diamond: | Stop animation | stop animation on [self] | object: The object to stop its animation |
-| :white_medium_small_square: | **Sound** |
+
+#### Sound
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Play sound | play sound on [self] | object: The sound gizmo that will play | Plays a sound gizmo. | Note: A sound must be stopped before it can be played again. |
 | :small_blue_diamond: | Pause sound | pause sound on [self] | object: The sound gizmo that will pause | Pauses a sound gizmo. | Note: A sound must be stopped before it can be played again. |
 | :small_blue_diamond: | Stop sound | stop sound on [self] | object: The sound gizmo that will stop | Stops a sound gizmo. | Note: A sound must be stopped before it can be played again. |
-| :white_medium_small_square: | **VFX** |
+
+#### VFX
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Play visual fx | play visual effects on [self] | object: The visual effect gizmo that will play | Plays a visual effects gizmo. |
 | :small_blue_diamond: | Stop visual fx | stop visual effects on [self] | object: The visual effect gizmo that will stop | Stops a visual effects gizmo. |
-| :white_medium_small_square: | **World**  |
+
+#### World
+
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Reset world state | reset world state | | Resets the world back to its inital state. |
-| :white_medium_small_square: | **Player** |
+
+#### Player
+
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Transfer ownership of object to player |
 | :small_orange_diamond: | Owner of object |
 | :small_orange_diamond: | Play Haptics on player controller |
 | :small_orange_diamond: | Set player voice setting to |
-| :white_medium_small_square: | **Raycast** |
+
+#### Raycast
+
+| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Raycast |
 | :small_orange_diamond: | Raycast with overrides |
 
