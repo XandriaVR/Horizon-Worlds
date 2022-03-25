@@ -8,7 +8,7 @@
 
 ### :white_small_square: Control
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | if | `if [condition]` | Boolean: condition needs to evaluate to true | When If condition evaluates to true, execute the nested command(s).
 | :small_orange_diamond: | else if | `else if [condition]` | Boolean: condition needs to evaluate to true | When else if condition evaluates to true, execute the nested command(s). | Note: must be placed directy below an if codeblock. | 
@@ -17,14 +17,14 @@
 
 ### :white_small_square: Events
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When world is started | `When world is started` | | Event runs when world starts. This will happen when the first person enters the world's instance. :small_orange_diamond: Also runs after using reset world codeblock and at the start of a local script. |
 | :small_blue_diamond: | When event is received | `When event [myevent] is received with [param]` | :small_orange_diamond: Up to 3 parameters can be received. They can be any value type, except list. | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | :small_orange_diamond: Note: names given to input parmeters are local to the event. Use set to codebock to assign it's value to a variable and make it available to the entire script.
 
 ### :white_small_square: Event Actions
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Send event to object | `Send event [myevent] to [self] with [param]` | Object: (self, object, or player) that the event is sent to <br><br>param: Up to 3 parameters the event can send | Sends a custom event to an object variable. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. |
 | :small_blue_diamond: | Send event with delay | `Send event [myevent] to [self] after [number] seconds with [param]` | Object: (self, object, or player) the event is sent to <br><br>number: The number of seconds to delay <br><br>:small_orange_diamond: param: Up to 3 parameters the event can send | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. Only one of each delayed event can be sent at a time. | 
@@ -32,7 +32,7 @@
 
 ### :white_small_square: Collision Events
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When trigger is entered by object | `When trigger is entered by [obj]` <br>---<br> <sub>When event [triggerenter] with [obj] is received</sub> | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
 | :small_blue_diamond: | When trigger is exited by object | `When trigger is exited by [obj]` <br>---<br> <sub>When event [triggerexit] with [obj] is received</sub> | Object: The object that exited trigger | Event runs when an object exits the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
@@ -41,7 +41,7 @@
 
 ### :white_small_square: Player Events
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When trigger is entered by player | `When trigger is entered by [player]` <br>---<br> <sub>When event [triggerenter] with [player] is received</sub> | Player: The player that entered the trigger | Event runs when a player enters the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
 | :small_blue_diamond: | When trigger is exited by player | `When trigger is exited by [player]` <br>---<br> <sub>When event [triggerexit] with [player] is received</sub> | Player: The player that exited the trigger | Event runs when a player exits the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
@@ -50,7 +50,7 @@
 
 ### :white_small_square: Projectile Events
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | When projectile hits player | `When projectile hits player [player] [pos] [normal] [head]` | Player: who was hit <br><br>Pos: vector, where projectile hit <br><br>Normal: direction vector, which side of the player was hit <br><br>Head: boolean returns true if players head was hit | Executes when projectile from the launcher gizmo hits a player. The projectile launcher gizmo receives the event with four parameters. |
 | :small_orange_diamond: | When projectile hits interactive object | `When projectile hits interactive object [obj] [pos] [normal]` | Object: what was hit <br><br>Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits an interactive object |
@@ -58,7 +58,7 @@
 
 ### :white_small_square: Grab Events
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When object is grabbed by player | `When object is grabbed by [player]` <br>---<br> <sub>When event [grabstart] with [player] is received</sub> | Player: The player that grabbed the object that this script it attached to. | Event runs when this object is grabbed by a player. |
 | :small_blue_diamond: | When object is released by player | `When object is released by [player]` <br>---<br> <sub>When event [grabend] with [player] is received</sub> | Player: The player that released the object that this script it attached to. :small_orange_diamond: Also executes when a player leaves the world while holding the object. | Event runs when this object is released by a player. |
@@ -67,14 +67,14 @@
 
 ### :white_small_square: Attachable Events
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When object is attached to player | `When event [attachstart] with [player] is received` | Player: The player that attached the object that this script it attached to | Event runs when this object is attached to a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 | :small_blue_diamond: | When object is unattached from player | `When event [attachend] with [player] is received` | Player: The player that unattached the object that this script it attached to | Event runs when this object is detached from a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 
 ### :white_small_square: Controller Events
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When index trigger is pressed | `When event [indextriggerdown] with [player] is received while self is grabbed` | Player: The player that pressed their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is pressed. This event will only work on an object that is being grabbed by a player. | |
 | :small_blue_diamond: | When index trigger is released | `When event [indextriggerup] with [player] is received while self is grabbed` | Player: The player that released their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is released. This event will only work on an object that is being grabbed by a player. | |
@@ -85,7 +85,7 @@
 
 ### :white_small_square: Connections
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Connect to event | `connect [self] [triggerenter] to local event [enter]` | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
 | :small_orange_diamond: | Listen to events |
@@ -94,7 +94,7 @@
 
 ### :white_small_square: Instant Motion
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Move to | `action [moveto with [vector 1 / 0 / 0]] on [self]` | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
 | :small_blue_diamond: | Move by | `action [move with [vector 1 / 0 / 0]] on [self]` | vector: The direction and distance the object will move by object: The object that the motion applies to | Instantly moves the object relative to its current position by adding the vector to the current position. | |
@@ -105,7 +105,7 @@
 
 ### :white_small_square: Motion Over Time
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Move to over time | `action [moveto with [vector 1 / 0 / 0] over [number {1} sec]] on [self]` | vector: The positon in world space that the object moves to number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate over the given time. |
 | :small_blue_diamond: | Move by over time | `action [move with [vector 1 / 0 / 0] over [number {1} sec]] on [self]` | vector: The direction and distance the object will move by number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate that is the sum of the current position and the given coordinate, over the given time. |
@@ -116,7 +116,7 @@
 
 ### :white_small_square: Player Motion
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Respawn player | `action [respawn with [param]] on [self]` | playerid: The player that will be respawned object: The spawn point to respawn them to | Teleports a player to a spawn point. |
 | :small_orange_diamond: | Set player speed |
@@ -124,7 +124,7 @@
 
 ### :white_small_square: Physical Motion
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Disable object physical motion | `disable [self] physical motion` | object: The object that physical motion is being disabled on | Locks a physics object in place. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | :small_blue_diamond: | Enable object physical motion | `enable [self] physical motion` | object: The object that physical motion is being enabled on | Unlocks a physics object, allowing it to be moved. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
@@ -141,7 +141,7 @@
 
 ### :white_small_square: Object
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Show object | `show [self]` | object: The object that will turn visible | Makes object visible in your world. | Note: This will currently also affect collisions on an object. The object will be made collidable. |
 | :small_blue_diamond: | Hide object | `hide [self]` | object: The object that will turn hidden | Hides the object in your world. | Note: This will currently also affect collisions on an object. The object will have collisions turned off. |
@@ -157,13 +157,13 @@
 
 ### :white_small_square: Text
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Display text | `action [display with [number {1}]] on [self]` | string/number: The value the text gizmo will display object: The text gizmo that displays the string/number | Sets the displayed text in the text gizmo. |
 
 ### :white_small_square: Animation
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Play animation | `play animation on [self]` | object: The object that will play its animation | Plays the object's animation. |
 | :small_blue_diamond: | Pause animation | `pause animation on [self]` | object: The object that will pause its animation | Pauses the object's animation. |
@@ -171,7 +171,7 @@
 
 ### :white_small_square: Sound
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Play sound | `play sound on [self]` | object: The sound gizmo that will play | Plays a sound gizmo. | Note: A sound must be stopped before it can be played again. |
 | :small_blue_diamond: | Pause sound | `pause sound on [self]` | object: The sound gizmo that will pause | Pauses a sound gizmo. | Note: A sound must be stopped before it can be played again. |
@@ -179,20 +179,20 @@
 
 ### :white_small_square: VFX
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Play visual fx | `play visual effects on [self]` | object: The visual effect gizmo that will play | Plays a visual effects gizmo. |
 | :small_blue_diamond: | Stop visual fx | `stop visual effects on [self]` | object: The visual effect gizmo that will stop | Stops a visual effects gizmo. |
 
 ### :white_small_square: World
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Reset world state | `reset world state` | | Resets the world back to its inital state. |
 
 ### :white_small_square: Player
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+| | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Transfer ownership of object to player |
 | :small_orange_diamond: | Owner of object |
@@ -201,7 +201,7 @@
 
 ### :white_small_square: Raycast
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Raycast |
 | :small_orange_diamond: | Raycast with overrides |
@@ -210,7 +210,7 @@
 
 ### :white_small_square: Logic
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | == | `[a] == [b]` | | "true" if both values are the same. |
 | :small_blue_diamond: | != | `[a] != [b]` | | "true" if both values are not same. |
@@ -224,7 +224,7 @@
 
 ### :white_small_square: Basic Operations
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | + | `[a]+[b]` | | Returns the sum of two numbers. |
 | :small_blue_diamond: | - | `[a]-[b]` | | Returns the difference of two numbers. |
@@ -234,7 +234,7 @@
 
 ### :white_small_square: Basic Math
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | abs | `abs [n]` | | Returns the positive value of a number. So, abs -10 = 10 and abs 3 = 3. |
 | :small_blue_diamond: | ceil | `ceil [n]` | | Rounds a decimal number up to the next largest whole number. |
@@ -248,7 +248,7 @@
 
 ### :white_small_square: Advanced Math
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | pow | `pow [number] [power]` |
 | :small_blue_diamond: | cos | `cos [radians]` | | Returns the cosine value of a number, from -1.0 to 1.0. |
@@ -264,7 +264,7 @@
 
 ### :white_small_square: Random Numbers
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | random number with decimals | `random between [min] and [max]` | | Returns a value that can contain fractional decimals, between the first number and the second number. | Note: This is inclusive of the [min] value and inclusive of the [max] value. |
 | :small_blue_diamond: | random number | `random integer between [min] and [max]` | | Returns a whole number value, between the first number and the second number. | Note: This is inclusive of the [min] value and exclusive of the [max] value. |
@@ -272,7 +272,7 @@
 
 ### :white_small_square: Object Transformation
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | position of object | `position of [object]` |
 | :small_blue_diamond: | rotation of object | `rotation of [object]` |
@@ -283,7 +283,7 @@
 
 ### :white_small_square: Vector Math
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | new vector from xyz | `new vector [x] [y] [z]` |
 | :small_blue_diamond: | x of vector |` x of [vector]` |
@@ -300,7 +300,7 @@
 
 ### :white_small_square: Color
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | new color from rgb | `new color [r] [g] [b]` |
 | :small_blue_diamond: | rgb to hsv | `convert rgb to hsv [color]` |
@@ -309,7 +309,7 @@
 
 ### :white_small_square: Players
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Position of player | `[head] position of [player]` | | Can specify head, torso, left hand, right hand, and foot position of a player. |
 | :small_blue_diamond: | Forward direction of player | `[head] forward of [player]` | | Can specify head, torso, left hand, right hand, and foot forward of a player. |
@@ -320,14 +320,14 @@
 
 ### :white_small_square: Text
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Length of string | `length of [string]` | | Returns the length of a string. |
 | :small_orange_diamond: | Substring of string |
 
 ### :white_small_square: List
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Length of list |
 | :small_orange_diamond: | Add to list |
@@ -339,7 +339,7 @@
 
 ### :white_small_square: Raycast
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Get raycast data |
 
@@ -347,7 +347,7 @@
 
 ### :white_small_square: Values
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | set to | `set [variable] to [value]` |
 | :small_orange_diamond: | Set player persistent variable to |
@@ -355,19 +355,19 @@
 
 ### :white_small_square: Debugging
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | debug print | `debug print [value]` |
 
 ### :white_small_square: Type Casting
 
-| Source | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Variable as string | `[string] as string` | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |
 
 ### :white_small_square: Value Input
 
-| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | self | `(self)` | | Represents the object that the script is attached to. |
 | :small_orange_diamond: | server player |
@@ -380,7 +380,7 @@
 
 ### :white_small_square: Constants
 
-| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Pi |
 
