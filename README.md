@@ -30,12 +30,20 @@
 | :small_blue_diamond: | Send event to object | Send event [myevent] to [self] with [param] | Object: (self, object, or player) that the event is sent to <br><br>param: Up to 3 parameters the event can send | Sends a custom event to an object variable. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. |
 | :small_blue_diamond: | Send event with delay | Send event [myevent] to [self] after [number] seconds with [param] | Object: (self, object, or player) the event is sent to <br><br>number: The number of seconds to delay <br><br>:small_orange_diamond: param: Up to 3 parameters the event can send | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. Only one of each delayed event can be sent at a time. | 
 | :small_blue_diamond: | Cancel sending event with delay | Cancel sending event [myevent] to [self] | Object: (self, object, or player) to stop sending a custom event to | Cancels a custom event from being sent. |
-| :white_medium_small_square: | **Collision Events** |
+
+
+#### Collision Events
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When trigger is entered by object | ~~When event [triggerenter] with [obj] is received~~ <br>When trigger is entered by [obj] | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
 | :small_blue_diamond: | When trigger is exited by object | ~~When event [triggerexit] with [obj] is received~~ When trigger is exited by [obj] | Object: The object that exited trigger | Event runs when an object exits the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
 | :small_blue_diamond: | When colliding with object | ~~When event [collisionenter] with [object] is received~~ <br>When colliding with [obj] | Object: The object that collided with the object that this script is attached to. | Event runs when object collides with another object. | Note: The object must be configured to detect collisions and tag must match the one specified by the trigger. |
 | :small_blue_diamond: | When colliding with player | ~~When event [collisionenter] with [player] is received~~ <br>When colliding with [player] | Player: The player that collided with the object this script it attached to. | | Event runs when object collides with the players head or torso. | Note: The object must be configured to detect player collisions, or player and object collision. |
-| :white_medium_small_square: | **Player Events** |
+
+#### Player Events
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When trigger is entered by player | ~~When event [triggerenter] with [player] is received~~ <br>When trigger is entered by [player] | Player: The player that entered the trigger | Event runs when a player enters the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
 | :small_blue_diamond: | When trigger is exited by player | ~~When event [triggerexit] with [player] is received~~ <br>When trigger is exited by [player] | Player: The player that exited the trigger | Event runs when a player exits the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
 | :small_orange_diamond: | When player enters the world | When world is entered by [player] | Player: The player who eneters the world | Executes when player enters the world and when world is reset | Note: Also executes when a builder enters preview mode.
