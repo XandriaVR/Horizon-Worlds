@@ -6,8 +6,8 @@
 
 ### Events Tab
 
-<details><summary><h4>Control</h4></summary>
-
+#### Control
+<details><summary>open</summary>
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | if | if [condition] | Boolean: condition needs to evaluate to true | When If condition evaluates to true, execute the nested command(s).
