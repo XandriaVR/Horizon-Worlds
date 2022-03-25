@@ -30,8 +30,8 @@
 | :small_blue_diamond: | Send event with delay | Send event [myevent] to [self] after [number] seconds with [param] | Object: (self, object, or player) the event is sent to <br><br>number: The number of seconds to delay <br><br>:small_orange_diamond: param: Up to 3 parameters the event can send | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. Only one of each delayed event can be sent at a time. | 
 | :small_blue_diamond: | Cancel sending event with delay | Cancel sending event [myevent] to [self] | Object: (self, object, or player) to stop sending a custom event to | Cancels a custom event from being sent. |
 
-
 #### Collision Events
+
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When trigger is entered by object | ~~When event [triggerenter] with [obj] is received~~ <br>When trigger is entered by [obj] | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
@@ -186,13 +186,11 @@
 
 #### World
 
-
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Reset world state | reset world state | | Resets the world back to its inital state. |
 
 #### Player
-
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
@@ -234,7 +232,7 @@
 | :small_blue_diamond: | / | [a] / [b] | | Returns the result of the first number divided by the second number. |
 | :small_blue_diamond: | % | [a] % [b] | | Returns the "remainder" of the first number divided by the second number. Useful for making counters that count up to a certain number and then go back to 0. |
 
-# Basic Math
+#### Basic Math
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
@@ -340,7 +338,6 @@
 | :small_orange_diamond: | Index of item in list |
 
 #### Raycast
-
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
