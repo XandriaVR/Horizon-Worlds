@@ -10,7 +10,7 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_orange_diamond: | if | `if [condition]` | Boolean: condition needs to evaluate to true | When If condition evaluates to true, execute the nested command(s).
+| :small_orange_diamond: | if | if <font color="red">[condition]</font> | Boolean: condition needs to evaluate to true | When If condition evaluates to true, execute the nested command(s).
 | :small_orange_diamond: | else if | else if [condition] | Boolean: condition needs to evaluate to true | When else if condition evaluates to true, execute the nested command(s). | Note: must be placed directy below an if codeblock. | 
 | :small_orange_diamond: | else | else | | Will run nested commands if the if codeblock evaluates to false. | Note: must be placed directly below an if or else if codeblock. |
 | :small_orange_diamond: | while | while [condition] | Boolean: condition needs to evaluate to true | Will execute nested command(s) while the condition evaluates to true. | Note: limited to x amount of executions to avoid expensive/infinite loops. Use an event loop if you reach the limit.
