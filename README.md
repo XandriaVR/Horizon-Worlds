@@ -2,7 +2,7 @@
 
 :small_orange_diamond: Source of this data is from Code Block Reference PDFS found in [Horizon Worlds Community > Guides > Guide 7: Code Blocks](https://www.facebook.com/groups/horizonworlds/learning_content/?filter=485855206185443) (December 2021)
 
-:small_blue_diamond: Source of this data is from: https://support.oculus.com/487096395667734 (Note: older data)
+:small_blue_diamond: Source of this data is from: https://support.oculus.com/487096395667734 (Aug 2020?)
 
 ## Events Tab
 
