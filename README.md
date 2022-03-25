@@ -210,7 +210,7 @@
 
 ### :white_small_square: Logic
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | == | `[a] == [b]` | | "true" if both values are the same. |
 | :small_blue_diamond: | != | `[a] != [b]` | | "true" if both values are not same. |
