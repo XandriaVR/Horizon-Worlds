@@ -34,27 +34,27 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | When trigger is entered by object | When trigger is entered by [obj] <br>---<br> <sub>When event [triggerenter] with [obj] is received</sub> | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
-| :small_blue_diamond: | When trigger is exited by object | When trigger is exited by [obj] <br>---<br> <sub>When event [triggerexit] with [obj] is received</sub> | Object: The object that exited trigger | Event runs when an object exits the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
-| :small_blue_diamond: | When colliding with object | When colliding with [obj] <br>---<br> <sub>When event [collisionenter] with [object] is received</sub> | Object: The object that collided with the object that this script is attached to. | Event runs when object collides with another object. | Note: The object must be configured to detect collisions and tag must match the one specified by the trigger. |
-| :small_blue_diamond: | When colliding with player | When colliding with [player] <br>---<br> <sub>When event [collisionenter] with [player] is received</sub> | Player: The player that collided with the object this script it attached to. | | Event runs when object collides with the players head or torso. | Note: The object must be configured to detect player collisions, or player and object collision. |
+| :small_blue_diamond: | When trigger is entered by object | `When trigger is entered by [obj]` <br>---<br> <sub>When event [triggerenter] with [obj] is received</sub> | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
+| :small_blue_diamond: | When trigger is exited by object | `When trigger is exited by [obj]` <br>---<br> <sub>When event [triggerexit] with [obj] is received</sub> | Object: The object that exited trigger | Event runs when an object exits the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
+| :small_blue_diamond: | When colliding with object | `When colliding with [obj]` <br>---<br> <sub>When event [collisionenter] with [object] is received</sub> | Object: The object that collided with the object that this script is attached to. | Event runs when object collides with another object. | Note: The object must be configured to detect collisions and tag must match the one specified by the trigger. |
+| :small_blue_diamond: | When colliding with player | `When colliding with [player]` <br>---<br> <sub>When event [collisionenter] with [player] is received</sub> | Player: The player that collided with the object this script it attached to. | | Event runs when object collides with the players head or torso. | Note: The object must be configured to detect player collisions, or player and object collision. |
 
 ### :white_small_square: Player Events
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | When trigger is entered by player | When trigger is entered by [player] <br>---<br> <sub>When event [triggerenter] with [player] is received</sub> | Player: The player that entered the trigger | Event runs when a player enters the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
-| :small_blue_diamond: | When trigger is exited by player | When trigger is exited by [player] <br>---<br> <sub>When event [triggerexit] with [player] is received</sub> | Player: The player that exited the trigger | Event runs when a player exits the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
-| :small_orange_diamond: | When player enters the world | When world is entered by [player] | Player: The player who eneters the world | Executes when player enters the world and when world is reset | Note: Also executes when a builder enters preview mode.
-| :small_orange_diamond: | When player exits the world | When world is exited by [player] | Player: The player who exits the world | | Executes when player exists the world | Note: Also executes when a bulder enters build mode. |
+| :small_blue_diamond: | When trigger is entered by player | `When trigger is entered by [player]` <br>---<br> <sub>When event [triggerenter] with [player] is received</sub> | Player: The player that entered the trigger | Event runs when a player enters the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
+| :small_blue_diamond: | When trigger is exited by player | `When trigger is exited by [player]` <br>---<br> <sub>When event [triggerexit] with [player] is received</sub> | Player: The player that exited the trigger | Event runs when a player exits the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
+| :small_orange_diamond: | When player enters the world | `When world is entered by [player]` | Player: The player who eneters the world | Executes when player enters the world and when world is reset | Note: Also executes when a builder enters preview mode.
+| :small_orange_diamond: | When player exits the world | `When world is exited by [player]` | Player: The player who exits the world | | Executes when player exists the world | Note: Also executes when a bulder enters build mode. |
 
 ### :white_small_square: Projectile Events
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_orange_diamond: | When projectile hits player | When projectile hits player [player] [pos] [normal] [head] | Player: who was hit <br><br>Pos: vector, where projectile hit <br><br>Normal: direction vector, which side of the player was hit <br><br>Head: boolean returns true if players head was hit | Executes when projectile from the launcher gizmo hits a player. The projectile launcher gizmo receives the event with four parameters. |
-| :small_orange_diamond: | When projectile hits interactive object | When projectile hits interactive object [obj] [pos] [normal] | Object: what was hit <br><br>Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits an interactive object |
-| :small_orange_diamond: | When projectile hits static object | When projectile hits static object [pos] [normal] | Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits a static object |
+| :small_orange_diamond: | When projectile hits player | `When projectile hits player [player] [pos] [normal] [head]` | Player: who was hit <br><br>Pos: vector, where projectile hit <br><br>Normal: direction vector, which side of the player was hit <br><br>Head: boolean returns true if players head was hit | Executes when projectile from the launcher gizmo hits a player. The projectile launcher gizmo receives the event with four parameters. |
+| :small_orange_diamond: | When projectile hits interactive object | `When projectile hits interactive object [obj] [pos] [normal]` | Object: what was hit <br><br>Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits an interactive object |
+| :small_orange_diamond: | When projectile hits static object | `When projectile hits static object [pos] [normal]` | Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits a static object |
 
 ### :white_small_square: Grab Events
 
@@ -302,19 +302,19 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | new color from rgb | new color [r] [g] [b] |
-| :small_blue_diamond: | rgb to hsv | convert rgb to hsv [color] |
-| :small_blue_diamond: | hsv to rgb | convert hsv to rgb [color] |
-| :small_blue_diamond: | color of object | color of [o] |
+| :small_blue_diamond: | new color from rgb | `new color [r] [g] [b]` |
+| :small_blue_diamond: | rgb to hsv | `convert rgb to hsv [color]` |
+| :small_blue_diamond: | hsv to rgb | `convert hsv to rgb [color]` |
+| :small_blue_diamond: | color of object | `color of [o]` |
 
 ### :white_small_square: Players
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | Position of player | [head] position of [player] | | Can specify head, torso, left hand, right hand, and foot position of a player. |
-| :small_blue_diamond: | Forward direction of player | [head] forward of [player] | | Can specify head, torso, left hand, right hand, and foot forward of a player. |
+| :small_blue_diamond: | Position of player | `[head] position of [player]` | | Can specify head, torso, left hand, right hand, and foot position of a player. |
+| :small_blue_diamond: | Forward direction of player | `[head] forward of [player]` | | Can specify head, torso, left hand, right hand, and foot forward of a player. |
 | :small_orange_diamond: | Upward direction of player |
-| :small_blue_diamond: | Name of player | name of [player] | | Returns the username of a player. |
+| :small_blue_diamond: | Name of player | `name of [player]` | | Returns the username of a player. |
 | :small_orange_diamond: | Get player index |
 | :small_orange_diamond: | Get player from index |
 
@@ -322,7 +322,7 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | Length of string | length of [string] | | Returns the length of a string. |
+| :small_blue_diamond: | Length of string | `length of [string]` | | Returns the length of a string. |
 | :small_orange_diamond: | Substring of string |
 
 ### :white_small_square: List
@@ -349,7 +349,7 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | set to | set [variable] to [value] |
+| :small_blue_diamond: | set to | `set [variable] to [value]` |
 | :small_orange_diamond: | Set player persistent variable to |
 | :small_orange_diamond: | Get player persistent var |
 
@@ -357,26 +357,26 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | debug print | debug print [value] |
+| :small_blue_diamond: | debug print | `debug print [value]` |
 
 ### :white_small_square: Type Casting
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | Variable as string | [string] as string | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |
+| :small_blue_diamond: | Variable as string | `[string] as string` | | Converts other variables that aren't strings into strings. This is useful when concatenating values that aren’t strings together. |
 
 ### :white_small_square: Value Input
 
 | Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | self | (self) | | Represents the object that the script is attached to. |
+| :small_blue_diamond: | self | `(self)` | | Represents the object that the script is attached to. |
 | :small_orange_diamond: | server player |
-| :small_blue_diamond: | number input | (number [0]) | | A number value. |
-| :small_blue_diamond: | boolean input | [boolean [false]] | | A boolean value. |
-| :small_blue_diamond: | vector input | (vector [0] [0] [0]) | | A vector3 value. |
-| :small_blue_diamond: | rotation input | (rotation [0] [0] [0]) | | A rotation value. |
-| :small_blue_diamond: | color input | (color [1] [1] [1]) | | A color value. |
-| :small_blue_diamond: | string input | (string [.]) | | A string value. |
+| :small_blue_diamond: | number input | `(number [0])` | | A number value. |
+| :small_blue_diamond: | boolean input | `[boolean [false]]` | | A boolean value. |
+| :small_blue_diamond: | vector input | `(vector [0] [0] [0])` | | A vector3 value. |
+| :small_blue_diamond: | rotation input | `(rotation [0] [0] [0])` | | A rotation value. |
+| :small_blue_diamond: | color input | `(color [1] [1] [1])` | | A color value. |
+| :small_blue_diamond: | string input | `(string [.])` | | A string value. |
 
 ### :white_small_square: Constants
 
