@@ -8,9 +8,10 @@
 
 ### Events Tab
 
+#### Control
+
 | Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :white_medium_small_square: | **Control** |
 | :small_orange_diamond: | if | if [condition] | Boolean: condition needs to evaluate to true | When If condition evaluates to true, execute the nested command(s).
 | :small_orange_diamond: | else if | else if [condition] | Boolean: condition needs to evaluate to true | When else if condition evaluates to true, execute the nested command(s). | Note: must be placed directy below an if codeblock. | 
 | :small_orange_diamond: | else | else | | Will run nested commands if the if codeblock evaluates to false. | Note: must be placed directly below an if or else if codeblock. |
@@ -48,11 +49,19 @@
 | :small_blue_diamond: | When trigger is exited by player | ~~When event [triggerexit] with [player] is received~~ <br>When trigger is exited by [player] | Player: The player that exited the trigger | Event runs when a player exits the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
 | :small_orange_diamond: | When player enters the world | When world is entered by [player] | Player: The player who eneters the world | Executes when player enters the world and when world is reset | Note: Also executes when a builder enters preview mode.
 | :small_orange_diamond: | When player exits the world | When world is exited by [player] | Player: The player who exits the world | | Executes when player exists the world | Note: Also executes when a bulder enters build mode. |
-| :white_medium_small_square: | **Projectile Events** |
+
+#### Projectile Events
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | When projectile hits player | When projectile hits player [player] [pos] [normal] [head] | Player: who was hit <br><br>Pos: vector, where projectile hit <br><br>Normal: direction vector, which side of the player was hit <br><br>Head: boolean returns true if players head was hit | Executes when projectile from the launcher gizmo hits a player. The projectile launcher gizmo receives the event with four parameters. |
 | :small_orange_diamond: | When projectile hits interactive object | When projectile hits interactive object [obj] [pos] [normal] | Object: what was hit <br><br>Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits an interactive object |
 | :small_orange_diamond: | When projectile hits static object | When projectile hits static object [pos] [normal] | Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits a static object |
-| :white_medium_small_square: | **Grab Events** |
+
+#### Grab Events
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When object is grabbed by player | ~~When event [grabstart] with [player] is received~~ When object is grabbed by [player] | Player: The player that grabbed the object that this script it attached to. | Event runs when this object is grabbed by a player. |
 | :small_blue_diamond: | When object is released by player | ~~When event [grabend] with [player] is received~~ When object is released by [player] | Player: The player that released the object that this script it attached to. :small_orange_diamond: Also executes when a player leaves the world while holding the object. | Event runs when this object is released by a player. |
 | :small_orange_diamond: | When object is grabbed by 2 hands | When object is grabbed by 2 hands of [player] |
@@ -60,14 +69,22 @@
 | :white_medium_small_square: | **Attachable Events** |
 | :small_blue_diamond: | When object is attached to player | When event [attachstart] with [player] is received | Player: The player that attached the object that this script it attached to | Event runs when this object is attached to a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 | :small_blue_diamond: | When object is unattached from player | When event [attachend] with [player] is received | Player: The player that unattached the object that this script it attached to | Event runs when this object is detached from a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
-| :white_medium_small_square: | **Controller Events** |
+
+#### Controller Events
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When index trigger is pressed | When event [indextriggerdown] with [player] is received while self is grabbed | Player: The player that pressed their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is pressed. This event will only work on an object that is being grabbed by a player. | |
 | :small_blue_diamond: | When index trigger is released | When event [indextriggerup] with [player] is received while self is grabbed | Player: The player that released their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is released. This event will only work on an object that is being grabbed by a player. | |
 | :small_blue_diamond: | When button1 is pressed | When event [button1down] with [player] is received while self is grabbed | Player: The player that pressed button 1 while holding the object that this script it attached to | Event runs when button 1 on the oculus controller is pressed. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
 | :small_blue_diamond: | When button1 is released | When event [button1up] with [player] is received while self is grabbed | Player: The player that released button 1 while holding the object that this script it attached to | Event runs when button 1 on the oculus controller is released. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
 | :small_blue_diamond: | When button2 is pressed | When event [button2down] with [player] is received while self is grabbed | Player: The player that released button 2 while holding the object that this script it attached to | Event runs when button 2 on the oculus controller is pressed. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. | 
 | :small_blue_diamond: | When button2 is released | When event [button2up] with [player] is received while self is grabbed | Player: The player that released button 2 while holding the object that this script it attached to | Event runs when button 2 on the oculus controller is released. This event will only run on an object that is being grabbed by the hand that is holding the controller. | Note: This event will only run on an object that is being grabbed by the hand that is holding the controller. |
-| :white_medium_small_square: | **Connections**  |
+
+#### Connections
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Connect to event | connect [self] [triggerenter] to local event [enter] | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
 | :small_orange_diamond: | Listen to events |
 
