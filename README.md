@@ -11,7 +11,7 @@
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | if | `if [condition]` | Boolean: condition needs to evaluate to true | When If condition evaluates to true, execute the nested command(s).
-| :small_orange_diamond: | `else if` | else if [condition] | Boolean: condition needs to evaluate to true | When else if condition evaluates to true, execute the nested command(s). | Note: must be placed directy below an if codeblock. | 
+| :small_orange_diamond: | else if | `else if [condition]` | Boolean: condition needs to evaluate to true | When else if condition evaluates to true, execute the nested command(s). | Note: must be placed directy below an if codeblock. | 
 | :small_orange_diamond: | else | `else` | | Will run nested commands if the if codeblock evaluates to false. | Note: must be placed directly below an if or else if codeblock. |
 | :small_orange_diamond: | while | `while [condition]` | Boolean: condition needs to evaluate to true | Will execute nested command(s) while the condition evaluates to true. | Note: limited to x amount of executions to avoid expensive/infinite loops. Use an event loop if you reach the limit.
 
@@ -19,8 +19,8 @@
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | `When world is started` | When world is started | | Event runs when world starts. This will happen when the first person enters the world's instance. :small_orange_diamond: Also runs after using reset world codeblock and at the start of a local script. |
-| :small_blue_diamond: | `When event is received` | When event [myevent] is received with [param] | :small_orange_diamond: Up to 3 parameters can be received. They can be any value type, except list. | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | :small_orange_diamond: Note: names given to input parmeters are local to the event. Use set to codebock to assign it's value to a variable and make it available to the entire script.
+| :small_blue_diamond: | When world is started | `When world is started` | | Event runs when world starts. This will happen when the first person enters the world's instance. :small_orange_diamond: Also runs after using reset world codeblock and at the start of a local script. |
+| :small_blue_diamond: | When event is received | `When event [myevent] is received with [param]` | :small_orange_diamond: Up to 3 parameters can be received. They can be any value type, except list. | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | :small_orange_diamond: Note: names given to input parmeters are local to the event. Use set to codebock to assign it's value to a variable and make it available to the entire script.
 
 ### :white_small_square: Event Actions
 
