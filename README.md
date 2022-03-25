@@ -6,7 +6,7 @@
 
 ### Events Tab
 
-<details><summary>#### Control</summary>
+<details><summary><h4>Control</h4></summary>
 
 | Source | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
