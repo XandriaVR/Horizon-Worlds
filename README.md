@@ -8,7 +8,7 @@
 
 ### :white_small_square: Control
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | if | `if [condition]` | Boolean: condition needs to evaluate to true | When If condition evaluates to true, execute the nested command(s).
 | :small_orange_diamond: | else if | `else if [condition]` | Boolean: condition needs to evaluate to true | When else if condition evaluates to true, execute the nested command(s). | Note: must be placed directy below an if codeblock. | 
@@ -17,14 +17,14 @@
 
 ### :white_small_square: Events
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When world is started | `When world is started` | | Event runs when world starts. This will happen when the first person enters the world's instance. :small_orange_diamond: Also runs after using reset world codeblock and at the start of a local script. |
 | :small_blue_diamond: | When event is received | `When event [myevent] is received with [param]` | :small_orange_diamond: Up to 3 parameters can be received. They can be any value type, except list. | Event runs when a custom event is received by this object. The custom event can be sent by the same script or a script on another object. | :small_orange_diamond: Note: names given to input parmeters are local to the event. Use set to codebock to assign it's value to a variable and make it available to the entire script.
 
 ### :white_small_square: Event Actions
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Send event to object | `Send event [myevent] to [self] with [param]` | Object: (self, object, or player) that the event is sent to <br><br>param: Up to 3 parameters the event can send | Sends a custom event to an object variable. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. |
 | :small_blue_diamond: | Send event with delay | `Send event [myevent] to [self] after [number] seconds with [param]` | Object: (self, object, or player) the event is sent to <br><br>number: The number of seconds to delay <br><br>:small_orange_diamond: param: Up to 3 parameters the event can send | Sends a custom event to an object variable, with a set delay. The event will be received by the object that is being referenced by the object variable. | :small_orange_diamond: Note: parameter names and order must match receiving event. Only one of each delayed event can be sent at a time. | 
@@ -32,7 +32,7 @@
 
 ### :white_small_square: Collision Events
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When trigger is entered by object | `When trigger is entered by [obj]` <br>---<br> <sub>When event [triggerenter] with [obj] is received</sub> | Object: The object that entered trigger | Event runs when an object enters the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
 | :small_blue_diamond: | When trigger is exited by object | `When trigger is exited by [obj]` <br>---<br> <sub>When event [triggerexit] with [obj] is received</sub> | Object: The object that exited trigger | Event runs when an object exits the trigger gizmo. | Note: The trigger must be configured to detect objects with a specific tag, and the object must have that tag. :small_orange_diamond: Script should be attached to the trigger or use connect to or listen to codeblocks to receive events from the trigger. |
@@ -41,7 +41,7 @@
 
 ### :white_small_square: Player Events
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When trigger is entered by player | `When trigger is entered by [player]` <br>---<br> <sub>When event [triggerenter] with [player] is received</sub> | Player: The player that entered the trigger | Event runs when a player enters the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
 | :small_blue_diamond: | When trigger is exited by player | `When trigger is exited by [player]` <br>---<br> <sub>When event [triggerexit] with [player] is received</sub> | Player: The player that exited the trigger | Event runs when a player exits the trigger the script is attached to. | Note: The trigger must be configured to detect players. |
@@ -50,7 +50,7 @@
 
 ### :white_small_square: Projectile Events
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | When projectile hits player | `When projectile hits player [player] [pos] [normal] [head]` | Player: who was hit <br><br>Pos: vector, where projectile hit <br><br>Normal: direction vector, which side of the player was hit <br><br>Head: boolean returns true if players head was hit | Executes when projectile from the launcher gizmo hits a player. The projectile launcher gizmo receives the event with four parameters. |
 | :small_orange_diamond: | When projectile hits interactive object | `When projectile hits interactive object [obj] [pos] [normal]` | Object: what was hit <br><br>Pos: vector, where the projectile hit <br><br>Normal: direction vector, which side of the object was hit | Executes when projectile from the launcher gizmo hits an interactive object |
@@ -58,7 +58,7 @@
 
 ### :white_small_square: Grab Events
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When object is grabbed by player | `When object is grabbed by [player]` <br>---<br> <sub>When event [grabstart] with [player] is received</sub> | Player: The player that grabbed the object that this script it attached to. | Event runs when this object is grabbed by a player. |
 | :small_blue_diamond: | When object is released by player | `When object is released by [player]` <br>---<br> <sub>When event [grabend] with [player] is received</sub> | Player: The player that released the object that this script it attached to. :small_orange_diamond: Also executes when a player leaves the world while holding the object. | Event runs when this object is released by a player. |
@@ -67,14 +67,14 @@
 
 ### :white_small_square: Attachable Events
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When object is attached to player | `When event [attachstart] with [player] is received` | Player: The player that attached the object that this script it attached to | Event runs when this object is attached to a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 | :small_blue_diamond: | When object is unattached from player | `When event [attachend] with [player] is received` | Player: The player that unattached the object that this script it attached to | Event runs when this object is detached from a player. | Note: The object being manipulated must be marked as "Interactive" with "Grabbable" in order to be set as attachable. |
 
 ### :white_small_square: Controller Events
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | When index trigger is pressed | `When event [indextriggerdown] with [player] is received while self is grabbed` | Player: The player that pressed their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is pressed. This event will only work on an object that is being grabbed by a player. | |
 | :small_blue_diamond: | When index trigger is released | `When event [indextriggerup] with [player] is received while self is grabbed` | Player: The player that released their trigger while holding the object that this script it attached to | Event runs when the index trigger on the oculus controller is released. This event will only work on an object that is being grabbed by a player. | |
@@ -85,7 +85,7 @@
 
 ### :white_small_square: Connections
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Connect to event | `connect [self] [triggerenter] to local event [enter]` | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
 | :small_orange_diamond: | Listen to events |
@@ -94,7 +94,7 @@
 
 ### :white_small_square: Instant Motion
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Move to | `action [moveto with [vector 1 / 0 / 0]] on [self]` | vector: The position in world space that the object moves to object: The object that the motion applies to | Instantly moves the object to the coordinates provided. | Note: The object being manipulated must be marked as "Interactive" or "Animated" in the properties panel of the object. |
 | :small_blue_diamond: | Move by | `action [move with [vector 1 / 0 / 0]] on [self]` | vector: The direction and distance the object will move by object: The object that the motion applies to | Instantly moves the object relative to its current position by adding the vector to the current position. | |
@@ -105,7 +105,7 @@
 
 ### :white_small_square: Motion Over Time
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Move to over time | `action [moveto with [vector 1 / 0 / 0] over [number {1} sec]] on [self]` | vector: The positon in world space that the object moves to number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate over the given time. |
 | :small_blue_diamond: | Move by over time | `action [move with [vector 1 / 0 / 0] over [number {1} sec]] on [self]` | vector: The direction and distance the object will move by number: The number of seconds it takes to move object: The object that the motion applies to | Moves the object along a line from its current position to a new coordinate that is the sum of the current position and the given coordinate, over the given time. |
@@ -116,7 +116,7 @@
 
 ### :white_small_square: Player Motion
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Respawn player | `action [respawn with [param]] on [self]` | playerid: The player that will be respawned object: The spawn point to respawn them to | Teleports a player to a spawn point. |
 | :small_orange_diamond: | Set player speed |
@@ -124,7 +124,7 @@
 
 ### :white_small_square: Physical Motion
 
-|  | Item in Library | Item in Folder | Parameters | Description | Tips |
+|  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Disable object physical motion | `disable [self] physical motion` | object: The object that physical motion is being disabled on | Locks a physics object in place. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | :small_blue_diamond: | Enable object physical motion | `enable [self] physical motion` | object: The object that physical motion is being enabled on | Unlocks a physics object, allowing it to be moved. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
