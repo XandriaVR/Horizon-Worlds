@@ -336,7 +336,11 @@
 | :small_blue_diamond: | rotation input | (rotation [0] [0] [0]) | | A rotation value. |
 | :small_blue_diamond: | color input | (color [1] [1] [1]) | | A color value. |
 | :small_blue_diamond: | string input | (string [.]) | | A string value. |
-| :white_medium_small_square: | **Constants** |
+
+#### Constants
+
+| Icon | Item in Library | Item in Folder | Parameters | Description | Tips |
+| --- | --- | --- | --- | --- | --- |
 | :small_orange_diamond: | Pi |
 
 ### Variables Tab
