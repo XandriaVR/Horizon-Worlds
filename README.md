@@ -89,6 +89,7 @@
 | --- | --- | --- | --- | --- | --- |
 | :small_blue_diamond: | Connect to event | `connect [self] [triggerenter] to local event [enter]` | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
 | :small_orange_diamond: | Listen to events |
+| :small_orange_diamond: | Stop listening to events |
 
 ## Motion Tab
 
@@ -102,6 +103,7 @@
 | :small_blue_diamond: | Rotate by | `action [rotate with [rotation 90/ 0 / 0]] on [self]` | rotation: The angle the object will rotate by object: The object that the motion applies to | Instantly rotates the object by adding the supplied rotation to the current rotation. |
 | :small_blue_diamond: | Scale to | `action [scale with [vector 1 / 0 / 0]] on self]]` | vector: The size the object will scale to object: The object that the motion applies to | Instantly sets the scale to the value provided. |
 | :small_orange_diamond: | Scale by |
+| :small_orange_diamond: | Multiply Scale by |
 
 ### :white_small_square: Motion Over Time
 
@@ -126,8 +128,9 @@
 
 |  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | Disable object physical motion | `disable [self] physical motion` | object: The object that physical motion is being disabled on | Locks a physics object in place. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
-| :small_blue_diamond: | Enable object physical motion | `enable [self] physical motion` | object: The object that physical motion is being enabled on | Unlocks a physics object, allowing it to be moved. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| :small_blue_diamond: | Set object physical motion |
+| :small_blue_diamond: | ~~Disable object physical motion~~ | `disable [self] physical motion` | object: The object that physical motion is being disabled on | Locks a physics object in place. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
+| :small_blue_diamond: | ~~Enable object physical motion~~ | `enable [self] physical motion` | object: The object that physical motion is being enabled on | Unlocks a physics object, allowing it to be moved. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | :small_blue_diamond: | Push | `action [+Velocity with [vector 1/ 1/ 1]] on [self]` | vector: The velocity being added object: The object that physical motion is being applied to | The object's velocity becomes equal to its current velocity, plus the given velocity. | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | :small_blue_diamond: | Push with mass | `action [+impulse with [vector 1/ 0/ 0]] on [self]` | vector: The velocity being added object: The object that physical motion is being applied to | The object's velocity becomes equal to its current velocity, plus the given velocity divided by the object's mass (heavier objects have their velocity adjusted less). | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
 | :small_blue_diamond: | Push in local space | `action [+VelLocal with [vector 1/ 0/ 0]] on [self]` | vector: The velocity being added object: The object that physical motion is being applied to | The given velocity is rotated to the object's rotation, then a Push runs (x becomes left/right, y becomes above/below, z becomes forward/backward). | Note: The object being manipulated must be marked as "Interactive" with "Physics" in the properties panel of the object. |
@@ -143,8 +146,10 @@
 
 |  | Item in Library | Item in Folder | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | Show object | `show [self]` | object: The object that will turn visible | Makes object visible in your world. | Note: This will currently also affect collisions on an object. The object will be made collidable. |
-| :small_blue_diamond: | Hide object | `hide [self]` | object: The object that will turn hidden | Hides the object in your world. | Note: This will currently also affect collisions on an object. The object will have collisions turned off. |
+| :small_blue_diamond: | Set object visibility |
+| :small_blue_diamond: | ~~Show object~~ | `show [self]` | object: The object that will turn visible | Makes object visible in your world. | Note: This will currently also affect collisions on an object. The object will be made collidable. |
+| :small_blue_diamond: | ~~Hide object~~ | `hide [self]` | object: The object that will turn hidden | Hides the object in your world. | Note: This will currently also affect collisions on an object. The object will have collisions turned off. |
+| :small_blue_diamond: | Set object collidability |
 | :small_blue_diamond: | Paint object | `action color with [color 1/ 0/ 0] on [self]` | color: The rgb color to paint the object with object: The object that will be painted | Sets the color of the object. |
 | :small_blue_diamond: | Enable object | `enable [self]` | object: The trigger that will be enabled | Enables a trigger's ability to detect people or objects. This can only be used on triggers. |
 | :small_blue_diamond: | Disable object | `disable [self]` | object: The trigger that will be disabled | Disables a trigger's ability to detect people or objects. This can only be used on triggers. |
