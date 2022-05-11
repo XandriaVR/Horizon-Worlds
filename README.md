@@ -87,9 +87,10 @@
 
 |  | Item in Library | Item in <br>Composition Pane | Parameters | Description | Tips |
 | --- | --- | --- | --- | --- | --- |
-| :small_blue_diamond: | Connect to event | `connect [self] [triggerenter] to local event [enter]` | object: The object the where the non-local script event fires event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
-| :small_orange_diamond: | Listen to events |
-| :small_orange_diamond: | Stop listening to events |
+| :small_blue_diamond: | Connect to event | `connect [self] [triggerenter] to local event [enter]` | object: The object the where the non-local script event fires <br><br>event: The event in the non-local script <br><br>event: The event in the local script that the non-local script should connect to | Connects an event in another object to an event in the local script, so when the event in the other object is triggered, the event in the local script is triggered too. | Note: This is useful for connecting multiple triggers in a script to one or multiple events in order to make a triggerable system. |
+| :small_orange_diamond: | Listen to events | `Listen to events from [object]`| Connects all of the events on another object to self's events of the same name. | Object: | Listen to allows you to receive all events from another object without needing to attach a script to it.
+| :small_orange_diamond: | Stop listening to events | `Stop lisening to events from [object]` | Stop receiving events if you have previously used Listen To Events. | Object: | Listen to allows you to receive all events from another object. Stop listening, prevents those
+events from continuing to be received.
 
 ## Motion Tab
 
