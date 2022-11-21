@@ -102,37 +102,49 @@ When event [eatReturn] with [] is received {
 
 
 // What if it was JAVASCRIPT/TYPESCRIPT? 
-// A experiment, not real code - Nov 20, 2022
+// A experiment in syntax, not real code - Nov 20, 2022
 
 /************************************
 IMPORT HW API
 *************************************/
-
-import * as hw from "horizonworldapi_v0.1;
+import * as hw from "horizonworldapi_v0.0.0;
 
 /**************************
 * CREATE VARIABLES
 ***************************/
-const originPos: {x: number, y: number, z: number} = {x: 0, y: 0, z;0}
-const originRot: {x: number, y: number, z: number}
+const originPos: {x: number, y: number, z: number} = {x: 0, y: 0, z: 0}
+const originRot: {x: number, y: number, z: number} = {x: 0, y: 0, z: 0}
 let eat: boolean = false
-
 
 /************************************
 * When world is started 
 *************************************/
-
 if (hw.when_world_is_started === true {
 	
   // Set to and position of object(self)
-  originPos = hw.postionOfSelf
+  originPos = hw.postionOf(self)
   
   // Set to and rotation of object(self)
-  originRot = hw.rotationOfSelf
+  originRot = hw.rotationOf(self)
   
-  // Set visibility on self 
-  let visibility = hw.visibility({obj: self, visibility: boolean})
+  // Set visibility on self
+  hw.visibilityOf(self, true)
   
   // Set collidability on self
-  let collidability = true
+  hw.collidabilityOf(self, true)
+
+}
+
+/************************************
+* When object is grabbed by player
+*************************************/
+When event [grabstart] with [player] is received {
+  // Set to
+  set [eat] to boolean {true}
+  
+  // Send event with delay
+  send event [eatLoop] to [self] after [0.5] seconds with []
+  
+  // Cancel sending event with delay
+  cancel sending event [eatReturn] to [self]
 }
