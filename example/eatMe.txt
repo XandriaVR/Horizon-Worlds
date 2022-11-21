@@ -1,3 +1,5 @@
+
+// What if it was a proprietary script?
 // Based on https://support.oculus.com/487096395667734
 
 /**************************
@@ -96,4 +98,41 @@ When event [eatReturn] with [] is received {
   
   // Set collidability
   action [collidability with boolean {true}] on [self]
+}
+
+
+// What if it was JAVASCRIPT/TYPESCRIPT? 
+// A experiment, not real code - Nov 20, 2022
+
+/************************************
+IMPORT HW API
+*************************************/
+
+import * as hw from "horizonworldapi_v0.1;
+
+/**************************
+* CREATE VARIABLES
+***************************/
+let originPos = hw.vector(v: {x: number, y: number, z: number})
+let originRot = hw.rotation(r: {x: number, y: number, z: number})
+let eat: boolean = false
+
+
+/************************************
+* When world is started 
+*************************************/
+
+if (hw.when_world_is_started === true {
+	
+  // Set to and position of object
+  originPos = hw.postionOfSelf
+  
+  // Set to and rotation of object
+  originRot = hw.rotationOfSelf
+  
+  // Set visibility on self 
+  let hw.visibility = true
+  
+  // Set collidability on self
+  let hw.collidability = true
 }
