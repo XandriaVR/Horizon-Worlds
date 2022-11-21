@@ -100,6 +100,7 @@ When event [eatReturn] with [] is received {
   action [collidability with boolean {true}] on [self]
 }
 
+/***************************************/
 
 // What if it was JAVASCRIPT/TYPESCRIPT? 
 // A experiment in syntax, not real code - Nov 20, 2022
@@ -147,4 +148,20 @@ if (hw.objGrabbedByPlayer === true){
 
   // Cancel sending event with delay
   hw.cancelSendingEvent(eatReturn, self)
+}
+
+/************************************
+* When object is released by player
+*************************************/
+if (hw.objReleasedByPlayer === true) {
+  // Cancel sending event with delay
+  hw.cancelSendingEvent(eatLoop, self)
+  
+  // Send event with delay using milliseconds
+  hw.sendEventWithDelay(eatReturn, self, 3000)
+  
+  // Set to
+  eat = false
+
+
 }
