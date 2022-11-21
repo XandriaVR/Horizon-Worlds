@@ -113,8 +113,8 @@ import * as hw from "horizonworldapi_v0.1;
 /**************************
 * CREATE VARIABLES
 ***************************/
-let originPos = hw.vector(v: {x: number, y: number, z: number})
-let originRot = hw.rotation(r: {x: number, y: number, z: number})
+const originPos: {x: number, y: number, z: number} = {x: 0, y: 0, z;0}
+const originRot: {x: number, y: number, z: number}
 let eat: boolean = false
 
 
@@ -124,15 +124,15 @@ let eat: boolean = false
 
 if (hw.when_world_is_started === true {
 	
-  // Set to and position of object
+  // Set to and position of object(self)
   originPos = hw.postionOfSelf
   
-  // Set to and rotation of object
+  // Set to and rotation of object(self)
   originRot = hw.rotationOfSelf
   
   // Set visibility on self 
-  let hw.visibility = true
+  let visibility = hw.visibility({obj: self, visibility: boolean})
   
   // Set collidability on self
-  let hw.collidability = true
+  let collidability = true
 }
