@@ -117,6 +117,17 @@ const originPos: {x: number, y: number, z: number} = {x: 0, y: 0, z: 0}
 const originRot: {x: number, y: number, z: number} = {x: 0, y: 0, z: 0}
 let eat: boolean = false
 
+/**************************
+* CUSTOM FUNCTIONS AND/OR CLASSES
+***************************/
+function EatLoop() {
+
+}
+
+function EatReturn() {
+
+}
+
 /************************************
 * When world is started 
 *************************************/
