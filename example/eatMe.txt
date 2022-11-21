@@ -138,13 +138,13 @@ if (hw.when_world_is_started === true {
 /************************************
 * When object is grabbed by player
 *************************************/
-When event [grabstart] with [player] is received {
+if (hw.objGrabbedByPlayer === true){
   // Set to
-  set [eat] to boolean {true}
-  
-  // Send event with delay
-  send event [eatLoop] to [self] after [0.5] seconds with []
-  
+  eat = true
+
+  // Send event with delay using milliseconds
+  hw.sendEventWithDelay(eatLoop, self, 500)
+
   // Cancel sending event with delay
-  cancel sending event [eatReturn] to [self]
+  hw.cancelSendingEvent(eatReturn, self)
 }
