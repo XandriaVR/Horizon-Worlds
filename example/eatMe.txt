@@ -119,7 +119,7 @@ let eat: boolean = false
 /************************************
 * When world is started 
 *************************************/
-if (hw.when_world_is_started === true {
+if (hw.whenWorldIsStarted === true {
 	
   // Set to and position of object(self)
   originPos = hw.postionOf(self)
